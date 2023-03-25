@@ -1,44 +1,4 @@
-@font-face {
-    font-family: 'Akrobat SemiBold';
-    src: url('../fonts/Akrobat-SemiBold.eot'); /* IE 9 Compatibility Mode */
-    src: url('../fonts/Akrobat-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-    url('../fonts/Akrobat-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/Akrobat-SemiBold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-    url('../fonts/Akrobat-SemiBold.ttf') format('truetype') /* Safari, Android, iOS */
-}
-
-@font-face {
-    font-family: 'Akrobat Bold';
-    src: url('../fonts/Akrobat-Bold.eot'); /* IE 9 Compatibility Mode */
-    src: url('../fonts/Akrobat-Bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-    url('../fonts/Akrobat-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/Akrobat-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-    url('../fonts/Akrobat-Bold.ttf') format('truetype') /* Safari, Android, iOS */
-}
-
-@font-face {
-    font-family: 'Akrobat ExtraBold';
-    src: url('../fonts/Akrobat-ExtraBold.eot'); /* IE 9 Compatibility Mode */
-    src: url('../fonts/Akrobat-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-    url('../fonts/Akrobat-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
-    url('../fonts/Akrobat-ExtraBold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-    url('../fonts/Akrobat-ExtraBold.ttf') format('truetype') /* Safari, Android, iOS */
-}
-
-@font-face {
-	font-family: 'Akrobat Regular';
-	src: url('../fonts/Akrobat-Regular.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/Akrobat-Regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-	url('../fonts/Akrobat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-	url('../fonts/Akrobat-Regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-	url('../fonts/Akrobat-Regular.ttf') format('truetype') /* Safari, Android, iOS */
-
-}
-
-/*font-family: 'Akrobat';*/
-/*font-family: 'Akrobat Light';*/
-/*font-family: 'Akrobat ExtraLight';*/
-/*font-family: 'Akrobat Black';*/
+@import "fonts.css";
 
 .header {
     position: relative;
@@ -157,9 +117,23 @@ button {
         width: 525px;
         height: 580px;
         top: 32px;
+        left: 40px;
         background: linear-gradient(216.88deg, rgba(255, 245, 246, 0.19) 18.25%, #FFF5F6 100%);
         backdrop-filter: blur(52px);
         border-radius: 30px;
+    }
+
+    .sticker {
+        position: absolute;
+        width: 186px;
+        height: 159px;
+        left: -83.93px;
+        top: 0;
+
+        background: #FFFFFF;
+        box-shadow: -8px 12px 64px rgba(164, 164, 164, 0.15);
+        border-radius: 16px;
+        z-index: 6;
     }
 }
 
