@@ -188,6 +188,214 @@ button {
     }
 }
 
+.section-title{
+	margin-bottom: 17px;
+	font-family: 'Akrobat Bold';
+	font-style: normal;
+	font-size: 56px;
+	line-height: 48px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #1E1E1E;
+	text-transform: uppercase;
+}
+.section-subtitle{
+	margin-bottom: 30px;
+	font-family: 'Akrobat SemiBold';
+	font-style: normal;
+	font-size: 36px;
+	line-height: 47px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.steps{
+	background-color: #FFF2E8;
+	padding-top: 66px;
+	padding-bottom: 90px;
+
+	.steps-item{
+		&__icon{
+
+		}
+		&__text{}
+		&__subtext{}
+	}
+}
+
+.soon{
+	background-color: #FFF;
+	padding-top: 49px;
+	padding-bottom: 34px;
+	.section-subtitle{
+		margin-top: 15px;
+	}
+	.btn-block{
+		display: flex;
+		align-items: center;
+		justify-content: end;
+	}
+	.btn-soon{
+		background: #F8B508;
+		width: 382px;
+		height: 70px;
+		font-family: 'Akrobat ExtraBold';
+		font-style: normal;
+		font-size: 27px;
+		line-height: 28px;
+		letter-spacing: 0.03em;
+	}
+
+	.event-block{
+		.event-item{
+			position: relative;
+			border-radius: 11px;
+			margin-bottom: 15px;
+			overflow: hidden;
+
+			img{
+				width: 100%;
+				position: relative;
+				z-index: 1;
+			}
+			.gradient{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 29.19%, #000000 100%);
+				background-image: -moz-linear-gradient(180deg, rgba(0, 0, 0, 0) 29.19%, #000000 100%);
+				background-image: -webkit-gradient(180deg, rgba(0, 0, 0, 0) 29.19%, #000000 100%);
+				z-index: 2;
+			}
+
+			.event-description{
+				z-index: 3;
+				position: absolute;
+				bottom: 25px;
+				left: 32px;
+				.event-text{
+					font-family: 'Akrobat Regular';
+					font-style: normal;
+					font-size: 22px;
+					line-height: 24px;
+					letter-spacing: 0.03em;
+					color: #FFFFFF;
+					text-transform: uppercase;
+					&__bold{
+						font-family: 'Akrobat ExtraBold';
+					}
+				}
+			}
+		}
+	}
+}
+
+.multimedia{
+	background-color: #FBFBFB;
+	padding-top: 49px;
+	padding-bottom: 59px;
+
+	.container-multimedia-slider{
+		padding: 0 56px;
+
+		.carousel {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			align-items: center;
+			font-family: Arial;
+
+			&__list {
+				display: flex;
+				list-style: none;
+				position: relative;
+				width: 100%;
+				height: 300px;
+				justify-content: center;
+				perspective: 300px;
+			}
+
+			&__item {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #fff;
+				font-size: 0px;
+				width: 150px;
+				height: 250px;
+				border-radius: 12px;
+				box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.5);
+				position: absolute;
+				transition: all .3s ease-in;
+
+				&:nth-child(1) {
+					background: linear-gradient(45deg, #2D35EB 0%, #904ED4 100%);
+				}
+
+				&:nth-child(2) {
+					background: linear-gradient(45deg, #2D35EB 0%, #fdbb2d 100%);
+				}
+
+				&:nth-child(3) {
+					background: linear-gradient(45deg, #2D35EB 0%, #22c1c3 100%);
+				}
+
+				&:nth-child(4) {
+					background: linear-gradient(45deg, #fdbb2d 0%, #904ED4 100%);
+				}
+
+				&:nth-child(5) {
+					background: linear-gradient(45deg, #22c1c3 0%, #904ED4 100%);
+				}
+
+				&[data-pos="0"] {
+					z-index: 5;
+				}
+
+				&[data-pos="-1"],
+				&[data-pos="1"] {
+					opacity: 0.7;
+					filter: blur(1px) grayscale(10%);
+				}
+
+				&[data-pos="-1"] {
+					transform: translateX(-40%) scale(.9);
+					z-index: 4;
+				}
+
+				&[data-pos="1"] {
+					transform: translateX(40%) scale(.9);
+					z-index: 4;
+				}
+
+				&[data-pos="-2"],
+				&[data-pos="2"] {
+					opacity: 0.4;
+					filter: blur(3px) grayscale(20%);
+				}
+
+				&[data-pos="-2"] {
+					transform: translateX(-70%) scale(.8);
+					z-index: 3;
+				}
+
+				&[data-pos="2"] {
+					transform: translateX(70%) scale(.8);
+					z-index: 3;
+				}
+			}
+		}
+	}
+}
+
 .footer{
 	background-color: #F7520F;
 	padding: 30px 0 58px 0;
@@ -210,7 +418,7 @@ button {
 	.footer-block__search{
 		padding-top: 30px;
 		.footer-block__search-group{
-			height: 84px;
+			height: 82px;
 			background-color: #fff;
 			border-radius: 60px;
 			border: 1px solid #fff;
@@ -244,11 +452,12 @@ button {
 			}
 
 			button{
+				width: 100%;
 				float: right;
 				border: 1px solid #FFB37F;
 				background-color: #FFB37F;
 				border-radius: 52px;
-				padding: 22px 40px;
+				padding: 24px 40px;
 				color: #fff;
 			}
 		}
@@ -262,6 +471,7 @@ button {
 		letter-spacing: 0.02em;
 		color: #FFFFFF;
 		margin-top: 36px;
+		padding-right: 10px;
 	}
 }
 
