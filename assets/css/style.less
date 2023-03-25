@@ -25,6 +25,16 @@
     url('../fonts/Akrobat-ExtraBold.ttf') format('truetype') /* Safari, Android, iOS */
 }
 
+@font-face {
+	font-family: 'Akrobat Regular';
+	src: url('../fonts/Akrobat-Regular.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/Akrobat-Regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+	url('../fonts/Akrobat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../fonts/Akrobat-Regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+	url('../fonts/Akrobat-Regular.ttf') format('truetype') /* Safari, Android, iOS */
+
+}
+
 /*font-family: 'Akrobat';*/
 /*font-family: 'Akrobat Light';*/
 /*font-family: 'Akrobat ExtraLight';*/
@@ -151,4 +161,81 @@ button {
         backdrop-filter: blur(52px);
         border-radius: 30px;
     }
+}
+
+.footer{
+	background-color: #F7520F;
+	padding: 30px 0 58px 0;
+
+	.mt-30{
+		margin-top: 30px;
+	}
+	img{
+		margin-right: 18px;
+	}
+
+	.footer-block__social{
+		img {
+			border: 1px solid #F7520F;
+			border-radius: 100px;
+			background-color: #fff;
+		}
+	}
+
+	.footer-block__search{
+		padding-top: 30px;
+		.footer-block__search-group{
+			height: 84px;
+			background-color: #fff;
+			border-radius: 60px;
+			border: 1px solid #fff;
+			padding: 4px 4px 4px 24px;
+			font-family: 'Akrobat Regular', sans-serif;
+			font-size: 18px;
+			input{
+				width: 100%;
+				padding: 24px 0;
+				border: 1px solid #fff;
+				border-radius: 10px;
+				font-family: 'Akrobat Regular', sans-serif;
+				font-size: 18px;
+				outline: none;
+				color: #B3B3B3;
+				line-height: 22px;
+				letter-spacing: 0.055em;
+				opacity: 0.7;
+			}
+			input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+				color: #B3B3B3;
+				opacity: 1; /* Firefox */
+			}
+
+			input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+				color: #B3B3B3;
+			}
+
+			input::-ms-input-placeholder { /* Microsoft Edge */
+				color: #B3B3B3;
+			}
+
+			button{
+				float: right;
+				border: 1px solid #FFB37F;
+				background-color: #FFB37F;
+				border-radius: 52px;
+				padding: 22px 40px;
+				color: #fff;
+			}
+		}
+	}
+
+	.copyright-block{
+		font-family: "Akrobat Regular", sans-serif;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: right;
+		letter-spacing: 0.02em;
+		color: #FFFFFF;
+		margin-top: 36px;
+	}
 }
