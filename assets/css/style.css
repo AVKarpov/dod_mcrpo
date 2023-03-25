@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Akrobat SemiBold';
+  src: url('../fonts/Akrobat-SemiBold.eot');
+  /* IE 9 Compatibility Mode */
+  src: url('../fonts/Akrobat-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */ url('../fonts/Akrobat-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/Akrobat-SemiBold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */ url('../fonts/Akrobat-SemiBold.ttf') format('truetype') /* Safari, Android, iOS */;
+}
+@font-face {
+  font-family: 'Akrobat Bold';
+  src: url('../fonts/Akrobat-Bold.eot');
+  /* IE 9 Compatibility Mode */
+  src: url('../fonts/Akrobat-Bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */ url('../fonts/Akrobat-Bold.woff2') format('woff2'), /* Super Modern Browsers */ url('../fonts/Akrobat-Bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */ url('../fonts/Akrobat-Bold.ttf') format('truetype') /* Safari, Android, iOS */;
+}
+body {
+  /*font-family: 'Akrobat', sans-serif;*/
+  /*font-family: 'Akrobat Light', sans-serif;*/
+  /*font-family: 'Akrobat ExtraLight', sans-serif;*/
+  /*font-family: 'Akrobat Bold', sans-serif;*/
+  /*font-family: 'Akrobat ExtraBold', sans-serif;*/
+  /*font-family: 'Akrobat Black', sans-serif;*/
+}
+.header-section .container a {
+  font-family: 'Akrobat SemiBold', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 23px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  color: #1E1E1E;
+  text-decoration: none;
+}
+.header-block {
+  position: relative;
+  padding: 20px 0;
+  z-index: 3;
+}
+.header-block button {
+  font-family: 'Akrobat Bold', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  min-height: 54px;
+  padding: 16px 23px;
+  border-radius: 50px;
+}
+.header-block button.btn-open-door {
+  min-width: 223px;
+  color: white;
+  background: #F7520F;
+  border: 1px solid #FFFFFF;
+}
+.header-block button.btn-map {
+  color: #F7520F;
+  background: #FFFFFF;
+  border: 1px solid #F7520F;
+  margin-left: 10px;
+}
+.header-section {
+  position: relative;
+  height: 129px;
+  overflow-x: clip;
+}
+.ellipse1 {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: #F6520F;
+  top: -136px;
+  right: 30px;
+  z-index: 1;
+  border-radius: 550px/550px;
+}
+.ellipse2 {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  background: #F8B508;
+  top: -38px;
+  right: -185px;
+  z-index: 2;
+  border-radius: 550px/550px;
+}
+/*# sourceMappingURL=style.css.map */
