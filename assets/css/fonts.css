@@ -69,3 +69,15 @@
     url('../fonts/Akrobat-Thin.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
     url('../fonts/Akrobat-Thin.ttf') format('truetype') /* Safari, Android, iOS */
 }
+
+.font-semi-bold{
+    font-family: 'Akrobat SemiBold';
+}
+
+.font-bold{
+    font-family: 'Akrobat Bold';
+}
+
+.font-extra-bold{
+    font-family: 'Akrobat ExtraBold';
+}
