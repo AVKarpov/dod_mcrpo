@@ -26,7 +26,7 @@
                     <a href="#">ГЛАВНАЯ</a>
                     <a href="#">ОТРАСЛИ</a>
                     <a href="#">ПРОФЕССИИ</a>
-                    <a href="#" style="color: white">КОЛЛЕДЖИ</a>
+                    <a href="#" id="btn-dod-modal" style="color: white" data-toggle="modal" data-target=".bd-example-modal-lg">КОЛЛЕДЖИ</a>
                 </div>
                 <div class="col-lg-3 d-flex justify-content-evenly">
                     <button type="button" class="btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</button>
@@ -35,6 +35,38 @@
             </div>
         </div>
     </section>
+
+    <!-- Large modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="height: 400px">
+                <div class="row">
+                    <div class="col-4 college-menu">
+                        <div class="college-menu__title">Выберите колледж</div>
+                        <div class="college-menu__search-group">
+                            <div class="row align-items-center">
+                                <div class="col-9 px-0">
+                                    <input type="text" name="search" value="" placeholder="Поиск">
+                                </div>
+                                <div class="col-3">
+                                    <button type="submit"></button>
+                                </div>
+                            </div>
+                        </div>
+                        МГАК
+
+                        Колледж полиции
+                    </div>
+                    <div class="col-4 college-block">
+
+                    </div>
+                    <div class="col-4 college-block">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="top">
         <div class="container">
@@ -342,6 +374,10 @@
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/owl-carousel/owl.carousel.js"></script>
     <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>

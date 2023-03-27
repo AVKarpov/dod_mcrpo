@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	$('#btn-dod-modal').on('click', function (){
+		$('.bd-example-modal-lg').modal('show')
+		console.log("nuhhuhnu")
+	})
 	$(".owl-carousel").owlCarousel({
 		items: 7,
 		margin: 0,
