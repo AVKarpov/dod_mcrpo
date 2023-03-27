@@ -13,6 +13,7 @@
 
 </head>
 <body>
+    <div class="wrapper">
     <section class="header">
         <div class="container header-block">
             <div class="ellipse1"></div>
@@ -93,7 +94,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12" style="position: relative">
-                    <div class="owl-carousel owl-theme">
+                    <div id="owl-carousel-header" class="owl-carousel owl-theme">
                         <a href="" target="_blank"><img alt="" src="assets/img/college-mgpu.png"></a>
                         <a href="" target="_blank"><img alt="" src="assets/img/college-mok.png"></a>
                         <a href="" target="_blank"><img alt="" src="assets/img/college-mgok.png"></a>
@@ -117,7 +118,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-7">
                         <div class="background-rectangle">
                             <div class="row align-items-center">
                                 <div class="col-4">ОТРАСЛЬ</div>
@@ -149,11 +150,13 @@
 
                         </div>
                     </div>
-                    <div class="col-6 position-relative">
-                        <div class="open-door-main"><img src="assets/img/opendoor-girl-block.svg" alt=""></div>
-                        <div class="open-door-second-block"><img src="assets/img/opendoor-second-block.svg" alt=""></div>
-                        <div class="open-door-third-block"><img src="assets/img/opendoor-third-block.svg" alt=""></div>
-                        <div class="open-door-fourth-block"><img src="assets/img/opendoor-fourth-block.svg" alt=""></div>
+                    <div class="col-5 position-relative">
+                        <div class="open-doors__picture">
+                            <div class="open-doors__first-block"><img src="assets/img/opendoor-girl-block.svg" alt=""></div>
+                            <div class="open-doors__second-block"><img src="assets/img/opendoor-second-block.svg" alt=""></div>
+                            <div class="open-doors__third-block"><img src="assets/img/opendoor-third-block.svg" alt=""></div>
+                            <div class="open-doors__fourth-block"><img src="assets/img/opendoor-fourth-block.svg" alt=""></div>
+                        </div>
                     </div>
 
                 </div>
@@ -295,12 +298,18 @@
             </div>
         </div>
         <div class="container-multimedia-slider">
-            <div class="carousel">
-                <ul class="carousel__list">
-                    <li class="carousel__item" data-pos="-1">2</li>
-                    <li class="carousel__item" data-pos="0">3</li>
-                    <li class="carousel__item" data-pos="1">1</li>
-                </ul>
+            <div class="container">
+                <div class="carousel" style="position: relative">
+                    <div id="owl-carousel-footer" class="owl-carousel owl-theme">
+                        <img alt="" src="assets/img/mediaslider-3.png">
+                        <img alt="" src="assets/img/mediaslider-3.png">
+                        <img alt="" src="assets/img/mediaslider-3.png">
+                    </div>
+                    <div class="carousel-nav-block">
+                        <div class="nav-prev"></div>
+                        <div class="nav-next"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -338,7 +347,7 @@
             </div>
         </div>
     </section>
-
+    </div>
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/owl-carousel/owl.carousel.js"></script>
     <script src="assets/js/scripts.js"></script>
