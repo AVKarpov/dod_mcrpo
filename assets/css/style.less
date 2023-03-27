@@ -846,28 +846,48 @@ button {
     padding: 60px 0;
 }
 
+.modal-content {
+	border: none !important;
+	border-radius: unset !important;
+}
+
 .college-menu {
 	background-color: #F7520F;
 	font-family: "Akrobat Bold", sans-serif;
-	font-size: 35px;
+	font-size: 24px;
 	line-height: 42px;
 	color: #FFFFFF;
+	padding: 25px 20px;
+
+	&__title {
+		padding-left: 15px !important;
+	}
+
+	ul {
+		font-family: "Akrobat ExtraBold", sans-serif;
+		list-style-type: none;
+		padding-left: 15px !important;
+
+		li {
+			border-bottom: 1px solid white;
+		}
+	}
 
 	&__search-group{
-		height: 82px;
 		background-color: #fff;
 		border-radius: 24px;
 		border: 1px solid #fff;
 		padding: 4px 4px 4px 24px;
 		font-family: 'Akrobat Regular', sans-serif;
 		font-size: 18px;
+		margin: 10px 0;
 		input{
-			font-size: 31px;
+			font-size: 25px;
 			line-height: 37px;
 			letter-spacing: 0.02em;
 
 			width: 100%;
-			padding: 15px 0;
+			padding: 5px 0;
 			border: 1px solid #fff;
 			border-radius: 10px;
 			font-family: 'Akrobat Regular', sans-serif;
@@ -889,9 +909,14 @@ button {
 		}
 
 		button{
+			position: absolute;
 			width: 33px;
 			height: 33px;
-			float: right;
+			min-height: auto;
+			z-index: 10;
+			top: 10px;
+			right: 10px;
+			padding: 0;
 			border: none;
 			border-radius: 0;
 			background-image: url("../img/search-zoom.svg");
@@ -904,5 +929,45 @@ button {
 }
 
 .college-block {
-background-color: #E8E8E8;
+	padding: 15px;
+
+	&__top {
+		background-color: #AEAEAE;
+		color: white;
+		text-align: center;
+
+		&__date {
+			font-family: "Akrobat ExtraBold", sans-serif;
+			font-size: 30px;
+		}
+
+		&__college-name{
+			font-size: 22px;
+		}
+
+	}
+
+	&__center {
+		background-color: #E8E8E8;
+		padding: 10px;
+	}
+
+	&__bottom {
+		background-color: #E8E8E8;
+		text-align: center;
+		padding: 20px 0;
+
+		button {
+			min-width: 223px;
+			color: white;
+			background: #F7520F;
+			padding: 16px 0;
+			border: 5px solid #FF5800;
+			border-radius: 10px;
+			font-family: "Akrobat Bold", sans-serif;
+			font-size: 27px;
+			letter-spacing: 0.03em;
+		}
+	}
+
 }
