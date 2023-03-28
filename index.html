@@ -18,21 +18,31 @@
         <div class="container header-block">
             <div class="ellipse1"></div>
             <div class="ellipse2"></div>
-            <div class="row align-items-center position-relative z-3">
-                <div class="col-lg-3 d-flex align-items-center justify-content-evenly">
-                    <a href="#"><img src="assets/img/mosobr_logo.svg" alt=""></a>
-                    <a href="#"><img src="assets/img/mcrpo_logo.svg" alt=""></a>
-                </div>
-                <div class="col-lg-6 d-flex justify-content-evenly">
-                    <a href="#">ГЛАВНАЯ</a>
-                    <a href="#">ОТРАСЛИ</a>
-                    <a href="#">ПРОФЕССИИ</a>
-                    <a href="#" id="btn-dod-modal" style="color: white" data-toggle="modal" data-target=".bd-example-modal-lg">КОЛЛЕДЖИ</a>
-                </div>
-                <div class="col-lg-3 d-flex justify-content-evenly">
-                    <button type="button" class="btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</button>
-                    <button type="button" class="btn-map">КАРТА</button>
-                </div>
+            <div class="align-items-center">
+                <nav class="navbar navbar-expand-lg z-3 d-flex w-100">
+                    <div class="col-xl-3 col-lg-3 d-flex align-items-center justify-content-start">
+                        <a href="#"><img src="assets/img/mosobr_logo.svg" alt=""></a>
+                        <a href="#"><img src="assets/img/mcrpo_logo.svg" alt=""></a>
+                    </div>
+                    <button class="navbar-toggler collapsed position-relative" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col-xl-8 col-lg-7 d-flex justify-content-evenly navbar-list-1">
+                            <a href="#" class="active">ГЛАВНАЯ</a>
+                            <a href="#">ОТРАСЛИ</a>
+                            <a href="#">ПРОФЕССИИ</a>
+                            <a href="#" id="btn-dod-modal" style="color: white" data-toggle="modal" data-target=".bd-example-modal-lg" style="color: white">КОЛЛЕДЖИ</a>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 d-flex justify-content-evenly navbar-list-2">
+                            <button type="button" class="btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</button>
+                            <button type="button" class="btn-map">КАРТА</button>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </section>
@@ -119,7 +129,7 @@
     <section class="top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 mt-5">
+                <div class="col-lg-6 col-6 mt-5 left-top-block">
                     <div class="title">
                         ВЫБЕРИ <span style="font-family: 'Akrobat ExtraBold', sans-serif">СВОЙ</span> <br> КОЛЛЕДЖ СТОЛИЦЫ
                     </div>
@@ -127,12 +137,12 @@
                     <div class="subtitle">Востребованные специальности в девяти профессиональных направлениях ждут тебя <br> в 49 колледжах столицы. </div>
                     <button type="button" class="btn-open-door btn-open-door__long">Дни открытых дверей</button>
                 </div>
-                <div class="col-lg-6 d-flex justify-content-center position-relative">
+                <div class="col-lg-6 col-6 d-flex justify-content-center position-relative girl-block">
                     <div class="girl-group">
                         <div class="sticker">
                             <div class="smile-image"></div>
-                            более <br> <span style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 38px">200</span>
-                            <div style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 18px; line-height: 107.5%; opacity: 0.8; color: #1E1E1E; text-align: center;">ВОСТРЕБОВАННЫХ ПРОФЕССИЙ</div>
+                            более <br> <span class="smile-image-text-1" style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 38px">200</span>
+                            <div class="smile-image-text-2" style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 18px; line-height: 107.5%; opacity: 0.8; color: #1E1E1E; text-align: center;">ВОСТРЕБОВАННЫХ ПРОФЕССИЙ</div>
                         </div>
                         <div class="girl-background"></div>
                         <img src="assets/img/girl.svg" alt="" style="position: relative; z-index: 6">
@@ -156,7 +166,7 @@
             </div>
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 college-block">
                     <div class="font-regular-30-grey">
                         Учиться в колледжах Москвы <br> престижно, потому что
                     </div>
@@ -200,8 +210,8 @@
                     <div class="col-7">
                         <div class="background-rectangle">
                             <div class="row align-items-center">
-                                <div class="col-4">ОТРАСЛЬ</div>
-                                <div class="col-8">
+                                <div class="col-lg-4 col-md-5 col-sm-5 left-text">ОТРАСЛЬ</div>
+                                <div class="col-lg-8 col-md-7 col-sm-7">
                                     <div class="row align-items-center">
                                         <div class="col-2 right-text fs-85">9</div>
                                         <div class="col-10 right-text fs-31">ПРОФЕССИОНАЛЬНЫХ СФЕР</div>
@@ -209,7 +219,7 @@
                                 </div>
                             </div>
                             <div class="row align-items-center">
-                                <div class="col-4">ПРОФЕССИЯ</div>
+                                <div class="col-4 left-text">ПРОФЕССИЯ</div>
                                 <div class="col-8">
                                     <div class="row align-items-center">
                                         <div class="col-4 right-text fs-85">223</div>
@@ -218,7 +228,7 @@
                                 </div>
                             </div>
                             <div class="row align-items-center">
-                                <div class="col-4">КОЛЛЕДЖ</div>
+                                <div class="col-4 left-text">КОЛЛЕДЖ</div>
                                 <div class="col-8">
                                     <div class="row align-items-center">
                                         <div class="col-3 right-text fs-85">49</div>
@@ -258,7 +268,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-2 col-sm-12 offset-sm-0">
+                        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
                             <div class="video-block">
                                 <div class="btn-play"></div>
                                 <img alt="" src="assets/img/video-preview.png">
@@ -428,10 +438,11 @@
     </section>
     </div>
     <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/owl-carousel/owl.carousel.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+
 
 
 </body>
