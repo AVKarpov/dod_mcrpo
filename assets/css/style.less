@@ -1305,7 +1305,6 @@ button {
 
 //---Page---
 .page-block1 {
-	background-color: #FFF;
 
 	.video-block{
 		margin-top: 30px;
@@ -1335,8 +1334,11 @@ button {
 }
 
 .extra-padding .container {
-	@media (min-width: 768px) {
-		max-width: 720px;
+	@media (min-width: 768px) { //768
+		max-width: 720px; //720
+	}
+	@media (min-width: 992px) { //768
+		max-width: 960px; //720
 	}
 	@media (min-width: 1200px) {
 		max-width: 960px;
@@ -1345,16 +1347,20 @@ button {
 
 .page-block2 {
 	position: relative;
-	margin-top: 35px;
+	margin: 15px 0;
 
 	.title {
 		font-family: 'Akrobat ExtraBold', sans-serif;
-		font-size: 60px;
-		line-height: 70px;
+		font-size: 44px; //60px;
+		line-height: 56px; //70px;
 		letter-spacing: -0.02em;
 		text-align: left;
 		z-index: 2;
 		position: relative;
+		text-transform: uppercase;
+		@media (max-width: 1199px) {
+			font-size: 40px;
+		}
 	}
 
 	.zigzag {
@@ -1372,7 +1378,7 @@ button {
 		line-height: 70px;
 		letter-spacing: -0.02em;
 		color: #000000;
-		margin-bottom: 40px;
+		text-transform: uppercase;
 	}
 
 	.dod-date {
@@ -1397,6 +1403,7 @@ button {
 		height: 70px;
 		border-radius: 52px;
 		padding: 0 20px;
+		text-transform: uppercase;
 
 		@media (max-width: 1010px) {
 			min-width: 210px;
@@ -1409,8 +1416,22 @@ button {
 	}
 }
 
-.steps2 {
-	background-color: #FFF2E8;
+.page-block3 {
+	margin: 20px 0;
+	font-family: 'Akrobat Bold', sans-serif;
+	font-size: 25px;
+
+	.pseudo-button {
+		background-color: #FF5800;
+		color: white;
+		padding: 5px 20px;
+		border-radius: 30px;
+		width: max-content;
+	}
+}
+
+.page-block5 {
+	background-color: #FFCBA7;
 	padding-top: 60px;
 	padding-bottom: 45px;
 	.section-title{
@@ -1427,6 +1448,7 @@ button {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin-top: 15px;
 		&__icon{
 			width: 110px;
 			height: 110px;
@@ -1479,6 +1501,62 @@ button {
 			background-repeat: no-repeat;
 			background-position: center center;
 		}
+	}
+}
+
+.page-block6 {
+	margin: 100px 0;
+	font-family: 'Akrobat SemiBold', sans-serif;
+	font-size: 35px;
+
+	.section-title{
+		font-size: 48px !important;
+		line-height: 40px !important;
+		letter-spacing: 0 !important;
+	}
+
+	.subtitle {
+		font-family: 'Akrobat SemiBold', sans-serif;
+		font-size: 31px;
+		line-height: 37px;
+		color: #000000;
+		margin-top: 17px;
+		margin-bottom: 40px;
+	}
+
+	.right-photo {
+		position: absolute;
+		width: 493px;
+		height: 296px;
+		background-image: url('../img/photo.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		border: 1px solid transparent;
+		border-radius: 2rem;
+		overflow: hidden;
+
+		@media (max-width: 991px) {
+			position: relative;
+		}
+	}
+
+	button {
+		font-family: 'Akrobat ExtraBold', sans-serif;
+		letter-spacing: 0.02em;
+		text-decoration: none;
+		min-height: 54px;
+		width: 100%;
+		color: white;
+		background: #F7520F;
+		border: 1px solid #FFFFFF;
+		font-size: 27px;
+		line-height: 28px;
+		height: 70px;
+		border-radius: 52px;
+		padding: 0 20px;
+		text-transform: uppercase;
+		max-width: 350px;
 	}
 }
 
