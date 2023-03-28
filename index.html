@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?7">
 
 </head>
@@ -32,8 +33,8 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="col-xl-8 col-lg-7 d-flex justify-content-evenly navbar-list-1">
-                            <a href="#" class="active">ГЛАВНАЯ</a>
-                            <a href="#">ОТРАСЛИ</a>
+                            <a href="/index.html" class="active">ГЛАВНАЯ</a>
+                            <a href="/otrasli.html">ОТРАСЛИ</a>
                             <a href="#">ПРОФЕССИИ</a>
                             <a href="#" id="btn-dod-modal" style="color: white" data-toggle="modal" data-target=".bd-example-modal-lg" style="color: white">КОЛЛЕДЖИ</a>
                         </div>
@@ -126,7 +127,7 @@
         </div>
     </div>
 
-    <section class="top">
+    <section class="top d-xl-block d-lg-block d-md-block d-sm-none">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-6 mt-5 left-top-block">
@@ -178,6 +179,31 @@
             </div>
         </div>
     </section>
+<!--   MOBILE TOP     -->
+    <section class="top d-xl-none d-lg-none d-md-none d-sm-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-7 mt-5 left-top-block">
+                    <div class="title">
+                        ВЫБЕРИ <span style="font-family: 'Akrobat ExtraBold', sans-serif">СВОЙ</span> <br> КОЛЛЕДЖ СТОЛИЦЫ
+                    </div>
+                    <div class="zigzag"><img src="assets/img/vector.svg" alt=""></div>
+                    <div class="sticker">
+                        <div class="smile-image"></div>
+                        более <br> <span class="smile-image-text-1" style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 38px">200</span>
+                        <div class="smile-image-text-2" style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 18px; line-height: 107.5%; opacity: 0.8; color: #1E1E1E; text-align: center;">ВОСТРЕБОВАННЫХ ПРОФЕССИЙ</div>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-center position-relative girl-block">
+                    <div class="girl-group">
+                        <div class="girl-background"></div>
+                        <img src="assets/img/girl.svg" alt="" style="position: relative; z-index: 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--   END MOBILE TOP    -->
 
     <section class="top-slider">
         <div class="container">
@@ -214,7 +240,7 @@
                                 <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                                     <div class="row align-items-center">
                                         <div class="col-2 right-text fs-85">9</div>
-                                        <div class="col-10 right-text fs-31">ПРОФЕССИОНАЛЬНЫХ СФЕР</div>
+                                        <div class="col-9 right-text fs-31">ПРОФЕССИОНАЛЬНЫХ СФЕР</div>
                                     </div>
                                 </div>
                             </div>
@@ -232,7 +258,7 @@
                                 <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                                     <div class="row align-items-center">
                                         <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 right-text fs-85">49</div>
-                                        <div class="col-9 right-text fs-31">КОЛЛЕДЖЕЙ СТОЛИЦЫ</div>
+                                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9  right-text fs-31">КОЛЛЕДЖЕЙ СТОЛИЦЫ</div>
                                     </div>
                                 </div>
                             </div>
@@ -438,8 +464,10 @@
     </section>
     </div>
     <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/i18n/defaults-ru_RU.js"></script>
     <script src="assets/owl-carousel/owl.carousel.js"></script>
     <script src="assets/js/scripts.js"></script>
 
