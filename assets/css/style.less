@@ -595,8 +595,8 @@ button {
 				transform: translate(-50%, -50%);
 				display: block;
 				width: 13px;
-				height: 17px;
-				background: url("../img/slider-arrow-left.png") 50% 50% no-repeat;
+				height: 25px;
+				background: url("../img/slider-arrow-left.svg") 50% 50% no-repeat;
 				font-size: 0 !important;
 			}
 		}
@@ -619,8 +619,8 @@ button {
 				transform: translate(-50%, -50%);
 				display: block;
 				width: 13px;
-				height: 17px;
-				background: url("../img/slider-arrow-right.png") 50% 50% no-repeat;
+				height: 25px;
+				background: url("../img/slider-arrow-right.svg") 50% 50% no-repeat;
 			}
 		}
 
@@ -1144,6 +1144,11 @@ button {
 
 }
 
+@media (max-width: 1200px) {
+	.modal-dialog{
+		min-width: 90%;
+	}
+}
 
 @media (max-width: 992px) {
 	.top{
@@ -1187,7 +1192,7 @@ button {
 		left: auto !important;
 	}
 
-	.college-block{
+	.block-college{
 		margin-top: 120px;
 		.font-regular-30-grey{
 			font-size: 30px;
@@ -1197,6 +1202,50 @@ button {
 			font-size: 41px;
 			line-height: 46px;
 		}
+	}
+	.open-doors{
+		padding-top: 60px;
+		.section-title {
+			font-size: 60px;
+			width: 100%;
+			line-height: 60px;
+			font-family: "Akrobat ExtraBold";
+			text-align: left;
+			margin-bottom: 20px;
+		}
+		.section-subtitle{
+			width: 100%;
+			text-align: left;
+			line-height: 38px;
+		}
+		&__picture{
+			scale: 0.8;
+			left: -40%;
+			bottom: 60%;
+		}
+
+		.background-rectangle{
+			padding: 50px 20px 20px 20px;
+			height: auto !important;
+			.left-text{
+				margin-bottom: 25px;
+				font-size: 34px;
+			}
+			.fs-85{
+				font-size: 70px !important;
+			}
+			.fs-31{
+				font-size: 31px !important;
+			}
+
+			.row{
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.footer-block__search{
+		visibility: hidden;
 	}
 }
 
