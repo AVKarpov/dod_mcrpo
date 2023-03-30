@@ -739,7 +739,9 @@ body {
 		margin-top: 30px;
 		text-align: center;
 		position: relative;
-		z-index: 8;
+		z-index: 2;
+		display: flex;
+		justify-content: center;
 		img{
 			width: 100%;
 			margin-top: -37px;
@@ -755,7 +757,7 @@ body {
 			background-position: center center;
 			position: absolute;
 			z-index: 10;
-			left: 45%;
+			//left: 45%;
 			top: -35px;
 			&:hover{
 				cursor: pointer;
@@ -1518,7 +1520,9 @@ body {
 		margin-top: 30px;
 		text-align: center;
 		position: relative;
-		z-index: 8;
+		z-index: 2;
+		display: flex;
+		justify-content: center;
 		img{
 			width: 100%;
 			margin-top: -37px;
@@ -1534,7 +1538,7 @@ body {
 			background-position: center center;
 			position: absolute !important;
 			z-index: 10;
-			left: 45%;
+			//left: 45%;
 			top: -35px;
 			&:hover{
 				cursor: pointer;
@@ -1637,6 +1641,19 @@ body {
 		padding: 5px 20px;
 		border-radius: 30px;
 		width: max-content;
+	}
+
+	@media(max-width: 768px){
+		.grey-row{
+			background-color: transparent !important;
+		}
+		.container>.row>div:first-child{
+			background-color: #F6F6F6;
+		}
+		.container>.row>div{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 	}
 }
 
@@ -2207,7 +2224,6 @@ h3{
 					}
 				}
 				.dropdown-menu {
-					//border-top: 0;
 					border-top-left-radius: 0;
 					border-top-right-radius: 0;
 					top: -9px !important;
@@ -2318,4 +2334,8 @@ h3{
 		}
 	}
 
+}
+
+.dropdown-menu{
+	width: 100% !important;
 }

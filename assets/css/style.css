@@ -682,7 +682,9 @@ body {
   margin-top: 30px;
   text-align: center;
   position: relative;
-  z-index: 8;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
 }
 .about .video-block img {
   width: 100%;
@@ -699,7 +701,6 @@ body {
   background-position: center center;
   position: absolute;
   z-index: 10;
-  left: 45%;
   top: -35px;
 }
 .about .video-block .btn-play:hover {
@@ -1381,7 +1382,9 @@ body {
   margin-top: 30px;
   text-align: center;
   position: relative;
-  z-index: 8;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
 }
 .page-block1 .video-block img {
   width: 100%;
@@ -1398,7 +1401,6 @@ body {
   background-position: center center;
   position: absolute !important;
   z-index: 10;
-  left: 45%;
   top: -35px;
 }
 .page-block1 .video-block .btn-play:hover {
@@ -1497,6 +1499,18 @@ body {
   padding: 5px 20px;
   border-radius: 30px;
   width: max-content;
+}
+@media (max-width: 768px) {
+  .page-block3 .grey-row {
+    background-color: transparent !important;
+  }
+  .page-block3 .container > .row > div:first-child {
+    background-color: #F6F6F6;
+  }
+  .page-block3 .container > .row > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 .page-block5 {
   background-color: #FFCBA7;
@@ -2124,5 +2138,8 @@ h3 {
   color: #ffffff;
   background-color: #F7520F;
   border: 1px solid #F7520F;
+}
+.dropdown-menu {
+  width: 100% !important;
 }
 /*# sourceMappingURL=style.css.map */
