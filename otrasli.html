@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css?7">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?11">
 
 </head>
 <body>
@@ -22,8 +22,8 @@
             <div class="align-items-center">
                 <nav class="navbar navbar-expand-lg z-3 d-flex w-100">
                     <div class="col-xl-3 col-lg-3 d-flex align-items-center justify-content-start">
-                        <a href="#"><img src="assets/img/mosobr_logo.svg" alt=""></a>
-                        <a href="#"><img src="assets/img/mcrpo_logo.svg" alt=""></a>
+                        <a href="https://www.mos.ru/donm/"><img src="assets/img/mosobr_logo.svg" alt=""></a>
+                        <a href="https://mcrpo.ru/"><img src="assets/img/mcrpo_logo.svg" alt=""></a>
                     </div>
                     <button class="navbar-toggler collapsed position-relative" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar top-bar"></span>
@@ -33,20 +33,98 @@
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="col-xl-8 col-lg-7 d-flex justify-content-evenly navbar-list-1">
-                            <a href="index.html">ГЛАВНАЯ</a>
+                            <a href="/index.html">ГЛАВНАЯ</a>
                             <a class="active" href="/otrasli.html">ОТРАСЛИ</a>
-                            <a href="#">ПРОФЕССИИ</a>
-                            <a href="#" id="btn-dod-modal" data-toggle="modal" data-target=".bd-example-modal-lg">КОЛЛЕДЖИ</a>
+                            <a href="/professii.html">ПРОФЕССИИ</a>
+                            <a href="/college.html" class="" >КОЛЛЕДЖИ</a>
                         </div>
                         <div class="col-xl-4 col-lg-5 d-flex justify-content-evenly navbar-list-2">
-                            <button type="button" class="btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</button>
-                            <button type="button" class="btn-map">КАРТА</button>
+<!--                            <a href="/page.html" class="button btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</a>-->
+                            <a href="/map.html" class="button btn-map">КАРТА</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
     </section>
+    <!-- Large modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-xl">
+            <div class="modal-content">
+                <div class="row m-0">
+                    <div class="col-4 college-menu">
+                        <div class="college-menu__title">Выберите колледж</div>
+                        <div class="college-menu__search-group position-relative">
+                            <button type="submit"></button>
+                            <div class="row align-items-center">
+                                <div class="col-11 px-0">
+                                    <input type="text" name="search" value="" placeholder="Поиск">
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>МГАК</li>
+                            <li>Колледж полиции</li>
+                            <li>Технологический колледж N° 21</li>
+                            <li>МГОК</li>
+                            <li>TK N° 22</li>
+                            <li>26 КАДР</li>
+                            <li>МОК ЗАПАД</li>
+                            <li>Юго-запад</li>
+                            <li style="border-bottom: none;">МГПУ</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 college-block">
+                        <div class="college-block__top" style="padding: 20px">
+                            <div class="college-block__top__date">23 марта 2023, 10:00</div>
+                            <div class="college-block__top__college-name">ГБПОУ ТК N°21 Вербная 4 стр.2</div>
+                        </div>
+                        <div class="college-block__center">
+                            - Архитектура <br>
+                            - Кровельщик <br>
+                            - Мастер сухого строительства <br>
+                            - Мастер общестроительных работ <br>
+                            - Мастер отделочных строительных работ <br>
+                            - Мастер жилищно-коммунального хозяйства <br>
+                            - Монтажник санитарно-технических, вентиляционных систем и оборудования <br>
+                            - Электромонтажник по сигнализации, централизации и блокировке <br>
+                            - Электромонтажник электрических сетей и электрооборудования <br>
+                            - Мастер столярно-плотничных, паркетных и стекольных работ <br>
+                            - Мастер отделочных строительных и декоративных работ <br>
+                            - Мастер по ремонту и обслуживанию инженерных систем жилищно-коммунального хозяйства <br>
+                        </div>
+                        <div class="college-block__bottom">
+                            <button type="button">Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-4 college-block">
+                        <div class="college-block__top" style="padding: 20px">
+                            <div class="college-block__top__date">3 апреля 2023, 15:00</div>
+                            <div class="college-block__top__college-name">ГБПОУ ТК N°21 Вербная 4 стр.2</div>
+                        </div>
+                        <div class="college-block__center">
+                            - Архитектура <br>
+                            - Кровельщик <br>
+                            - Мастер сухого строительства <br>
+                            - Мастер общестроительных работ <br>
+                            - Мастер отделочных строительных работ <br>
+                            - Мастер жилищно-коммунального хозяйства <br>
+                            - Монтажник санитарно-технических, вентиляционных систем и оборудования <br>
+                            - Электромонтажник по сигнализации, централизации и блокировке <br>
+                            - Электромонтажник электрических сетей и электрооборудования <br>
+                            - Мастер столярно-плотничных, паркетных и стекольных работ <br>
+                            - Мастер отделочных строительных и декоративных работ <br>
+                            - Мастер по ремонту и обслуживанию инженерных систем жилищно-коммунального хозяйства <br>
+                        </div>
+                        <div class="college-block__bottom">
+                            <button type="button">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="otr">
         <div class="container">
@@ -56,13 +134,16 @@
                 </div>
                 <div class="col-12">
                     <div class="filter-block">
-                        <div class="filter-item">Выбор профессии 1</div>
-                        <div class="filter-item">Выбор отрасли профессии 2</div>
-                        <div class="filter-item">Выбор отрасли профессии 3</div>
-                        <div class="filter-item">Выбор отрасли проф 4</div>
-                        <div class="filter-item">Выбор отрасли профессии 5</div>
-                        <div class="filter-item">Выбор отрасли профессии 6</div>
-                        <div class="filter-item">Выбор отрасли профессии 7</div>
+                        <div class="filter-item">Гостеприимство</div>
+                        <div class="filter-item">Промышленность</div>
+                        <div class="filter-item">ИТ</div>
+                        <div class="filter-item">Торговля и финансы</div>
+                        <div class="filter-item">Строительство</div>
+                        <div class="filter-item">Транспорт</div>
+                        <div class="filter-item">Образование</div>
+                        <div class="filter-item">Креативная индустрия</div>
+                        <div class="filter-item">Безопасность</div>
+                        <div class="filter-item">Другие сферы</div>
                     </div>
                 </div>
             </div>
@@ -73,7 +154,7 @@
                 <div class="col-12">
                     <div class="select-block">
                         <select name="" class="selectpicker">
-                            <option value="">Выберите отрасль</option>
+                            <option value="">Выберите профессию</option>
                             <option value="1">Архитектура</option>
                             <option value="2">Кровельщик</option>
                             <option value="3">Мастер сухого строительства</option>
@@ -84,7 +165,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h3>Где получить</h3>
+                    <h3>Где получить эту профессию или специальность</h3>
                 </div>
                 <div class="place-block">
                     <div class="row">
@@ -178,7 +259,7 @@
                             </div>
                         </div>
 
-                        <button class="more-btn">Подробнее</button>
+                        <a href="page.html" class="btn more-btn">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -189,21 +270,26 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title">УЗНАЙ <span class="font-extra-bold">БОЛЬШЕ</span> О СРЕДНЕМ<br> ПРОФЕССИОНАЛЬНОМ ОБРАЗОВАНИИ</div>
+                    <div class="offset-1 col-10 section-title">
+                        ОБУЧЕНИЕ В <span class="font-extra-bold">КОЛЛЕДЖЕ</span> — ЭТО ФОКУС НА ПРАКТИКЕ, ПРЕСТИЖ И КАРЬЕРНЫЕ ПЕРСПЕКТИВЫ, ГАРАНТИЯ ТРУДОУСТРОЙСТВА
+                    </div>
                     <div class="row">
                         <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 offset-sm-0">
-                            <div class="section-subtitle">
-                                В этом ролике мы покажем тебе, что колледжи — это современные учебные заведения, которые сочетают передовые методы обучения
-                                с традициями профессионального мастерства.
-                            </div>
-                            <div class="section-subtitle font-extra-bold">Учиться в колледже — престижно!</div>
+                            <!--                            <div class="section-subtitle">-->
+                            <!--                                В этом ролике мы покажем тебе, что колледжи — это современные учебные заведения, которые сочетают передовые методы обучения-->
+                            <!--                                с традициями профессионального мастерства.-->
+                            <!--                            </div>-->
+                            <div class="section-subtitle font-extra-bold">Учиться в московском колледже круто!<br> Присоединяйся к сообществу студентов и стань мастером своего дела.</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
                             <div class="video-block">
                                 <div class="btn-play"></div>
-                                <img alt="" src="assets/img/video-preview.png">
+                                <!--                                <img alt="" src="assets/img/video-preview.png">-->
+                                <video id="movie" width="100%" height="100%" poster="assets/img/video-preview.png" controls>
+                                    <source src="assets/video/movie.MOV" type="video/mp4">
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -219,12 +305,12 @@
             <div class="row">
                 <div class="col-6">
                     <div class="footer-block__logo">
-                        <a href="#"><img alt="" src="assets/img/mosobr_logo_footer.svg"></a>
-                        <a href="#"><img alt="" src="assets/img/mcrpo_logo_footer.svg"></a>
+                        <a href="https://www.mos.ru/donm/"><img alt="" src="assets/img/mosobr_logo_footer.svg"></a>
+                        <a href="https://mcrpo.ru/"><img alt="" src="assets/img/mcrpo_logo_footer.svg"></a>
                     </div>
                     <div class="footer-block__social mt-30">
-                        <a href="#"><img alt="" src="assets/img/telegram.svg"></a>
-                        <a href="#"><img alt="" src="assets/img/vk.svg"></a>
+                        <a href="#"><img alt="https://t.me/wsrmoscow" src="assets/img/telegram.svg"></a>
+                        <a href="https://vk.com/mcrpo"><img alt="" src="assets/img/vk.svg"></a>
                     </div>
                 </div>
                 <div class="col-5 offset-1">
@@ -235,13 +321,13 @@
                                     <input type="text" name="search" value="" placeholder="ВВЕДИТЕ СЛОВА ДЛЯ ПОИСКА">
                                 </div>
                                 <div class="col-4">
-                                    <button type="submit">ИСКАТЬ</button>
+                                    <button class="button" type="submit">ИСКАТЬ</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="copyright-block">
-                        2023, ГАО ДПО МЦРПО
+                        2023, ГАОУ ДПО МЦРПО
                     </div>
                 </div>
             </div>
@@ -256,7 +342,7 @@
 <script src="assets/js/bootstrap-select.min.js"></script>
 <script src="assets/js/i18n/defaults-ru_RU.js"></script>
 <script src="assets/owl-carousel/owl.carousel.js"></script>
-<script src="assets/js/scripts.js"></script>
+<script src="assets/js/scripts.js?3"></script>
 
 
 

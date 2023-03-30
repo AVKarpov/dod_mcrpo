@@ -9,11 +9,12 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.theme.default.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css?11">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?10">
 
 </head>
 <body>
-    <div class="wrapper">
+<div class="wrapper inner-page">
     <section class="header">
         <div class="container header-block">
             <div class="ellipse1"></div>
@@ -35,7 +36,7 @@
                             <a href="/index.html">ГЛАВНАЯ</a>
                             <a href="/otrasli.html">ОТРАСЛИ</a>
                             <a href="/professii.html">ПРОФЕССИИ</a>
-                            <a href="/college.html"  style="color: white"  class="spec-menu" >КОЛЛЕДЖИ</a>
+                            <a class="active" href="/college.html">КОЛЛЕДЖИ</a>
                         </div>
                         <div class="col-xl-4 col-lg-5 d-flex justify-content-evenly navbar-list-2">
 <!--                            <a href="/page.html" class="button btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</a>-->
@@ -46,7 +47,6 @@
             </div>
         </div>
     </section>
-
     <!-- Large modal -->
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-xl">
@@ -126,170 +126,127 @@
         </div>
     </div>
 
-
-    <section class="page-block1 extra-padding">
-        <div class="container">
-            <div class="video-block">
-                <div class="btn-play"></div>
-                <!--                                <img alt="" src="assets/img/video-preview.png">-->
-                <video id="movie" width="100%" height="100%" poster="assets/img/video-preview.png" controls>
-                    <source src="assets/video/movie.MOV" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <section class="page-block2 extra-padding">
-        <div class="container">
-            <div class="row align-items-center position-relative" style="z-index: 9">
-                <div class="col-6">
-                    <div class="title">Московский педагогический колледж</div>
-                </div>
-                <div class="col-6">
-                    <button type="button">День открытых дверей</button>
-                    <button type="button" class="enroll-button" style="margin-top: 30px">Записаться</button>
-                </div>
-            </div>
-            <div class="row"><div class="col-6"><div class="zigzag"></div></div></div>
-            <div class="row">
-                <div class="col-6">
-<!--                    <div class="subtitle">Твой педагогический дебют!</div>-->
-                </div>
-                <div class="col-6">
-                    <div class="dod-date">29 марта с 10:00 до 15:00</div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="page-block3">
-        <div class="grey-row extra-padding">
-            <div class="container">
-                <div class="row py-2 align-items-center">
-                    <div class="col-6">
-                        <div class="pseudo-button">Для кого?</div>
-                    </div>
-                    <div class="col-6">
-                        Для школьников 8-11 классов и их родителей
-                    </div>
-                </div>
-            </div>
-        </div>
-<!--        <div class="extra-padding">-->
-<!--            <div class="container">-->
-<!--                <div class="row py-2 align-items-center">-->
-<!--                    <div class="col-6">-->
-<!--                        <div class="pseudo-button">Количество мест</div>-->
-<!--                    </div>-->
-<!--                    <div class="col-6">-->
-<!--                        100-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-        <div class=" extra-padding">
-            <div class="container">
-                <div class="row py-2 align-items-center">
-                    <div class="col-6">
-                        <div class="pseudo-button">Правила прохода в здание</div>
-                    </div>
-                    <div class="col-6">
-                        Возьмите с собой паспорт для регистрации
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="grey-row extra-padding">
-            <div class="container">
-                <div class="row py-2 align-items-center">
-                    <div class="col-6">
-                        <div class="pseudo-button">Адрес</div>
-                    </div>
-                    <div class="col-6">
-                        Москва, ул. Федора Полетаева 2к7
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="page-block4 extra-padding my-4">
-        <div class="container d-flex align-items-center justify-content-center">
-            <div style="position:relative;overflow:hidden;width:100%"><iframe src="https://yandex.ru/map-widget/v1/?ll=37.770529%2C55.713659&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjY4Mjk4NBJM0KDQvtGB0YHQuNGPLCDQnNC-0YHQutCy0LAsINGD0LvQuNGG0LAg0KTRkdC00L7RgNCwINCf0L7Qu9C10YLQsNC10LLQsCwgMtC6NyIKDQUVF0IVytpeQg%2C%2C&z=16.49" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-        </div>
-    </section>
-
-    <section class="page-block5 extra-padding">
+    <section class="otr">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title">ЧТО ТЕБЯ ЖДЁТ?</div>
+                    <h2>Колледжи</h2>
+                </div>
+                <div class="col-12">
+                    <div class="col-12">
+                        <div class="select-block">
+                            <select name="" class="selectpicker" data-show-subtext="true">
+                                <option value="">Выберите колледж</option>
+                                <option value="1" data-subtext="г. Москва, улица Генерала Белова, д. 6">Технологический колледж N° 21</option>
+                                <option value="2" data-subtext="г. Москва, улица Вербная 4 стр.2">ГБПОУ "26 КАДР"</option>
+                                <option value="3" data-subtext="г. Москва, улица Вербная 4 стр.2">ГБПОУ ТК N°21</option>
+                                <option value="4" data-subtext="г. Москва, улица Генерала Белова, д. 6">ГБПОУ Колледж "Царицыно"</option>
+                            </select>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="steps-item">
-                        <div class="steps-item steps-item__icon red icon-1"></div>
-                        <div class="steps-item__text">Примеришь особую роль в деловой игре</div>
-                        <div class="steps-item__subtext">Выполнив все поставленные задачи твоей роли, вместе с командой вы сможете создать школу будущего!</div>
-                    </div>
+                <div class="col-12">
+                    <h3>Дни открытых дверей</h3>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="steps-item">
-                        <div class="steps-item steps-item__icon orange icon-2"></div>
-                        <div class="steps-item__text">Поучаствуешь в профессиональной пробе</div>
-                        <div class="steps-item__subtext">У тебя появится возможность выполнить настоящий педагогический кейс с использованием оборудования колледжа. Как у настоящих педагогов!</div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <div class="steps-item">
-                        <div class="steps-item steps-item__icon cherry icon-3"></div>
-                        <div class="steps-item__text">Узнаешь про условия поступления и обучения</div>
-                        <div class="steps-item__subtext">Вся актуальная информация о поступлении и возможностях колледжа, трудоустройстве, о том, как проходит практика и с какими работодателями сотрудничает колледж. Не забудь взять с собой блокнот и ручку или скачай лист для записи к себе по QR-коду, чтобы не упустить важное!</div>
+                <div class="col-12">
+                    <div class="info-block">
+                        <div class="info-block__schedule">
+                            <div class="row">
+                                <div class="col-12 position-relative">
+                                    <div id="owl-carousel-schedule" class="owl-carousel owl-theme">
+                                        <div class="datetime-block active">
+                                            <div class="date-block">12.03.2023</div>
+                                            <div class="time-block">12.00-18.00</div>
+                                        </div>
+                                        <div class="datetime-block">
+                                            <div class="date-block">19.06.2023</div>
+                                            <div class="time-block">12.00-18.00</div>
+                                        </div>
+                                        <div class="datetime-block">
+                                            <div class="date-block">23.06.2023</div>
+                                            <div class="time-block">12.00-18.00</div>
+                                        </div>
+                                        <div class="datetime-block">
+                                            <div class="date-block">25.06.2023</div>
+                                            <div class="time-block">12.00-18.00</div>
+                                        </div>
+                                        <div class="datetime-block">
+                                            <div class="date-block">26.06.2023</div>
+                                            <div class="time-block">12.00-18.00</div>
+                                        </div>
+                                        <div class="datetime-block">
+                                            <div class="date-block">01.07.2023</div>
+                                            <div class="time-block">12.00-18.00</div>
+                                        </div>
+                                    </div>
+                                    <div class="nav-schedule-slider">
+                                        <div class="prev"></div>
+                                        <div class="next"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="speciality-list">
+                            <div class="row">
+                                <div class="col-12">
+                                    <ul>
+                                        <li>Монтаж, техническое обслуживание и ремонт электронных приборов и устройств</li>
+                                        <li>Изготовитель художественных изделий из дерева</li>
+                                        <li>Гостиничное дело</li>
+                                        <li>Исполнитель художественно-оформительских работ</li>
+                                        <li>Земельно-имущественные отношения</li>
+                                        <li>Монтаж, техническое обслуживание и ремонт электронных приборов и устройств</li>
+                                        <li>Изготовитель художественных изделий из дерева</li>
+                                        <li>Гостиничное дело</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="page.html" class="btn more-btn">Подробнее</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="page-block6 extra-padding">
+    <section class="about">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    День открытых дверей по специальности «Коррекционная педагогика в дошкольном образовании».
-                    <br><br>
-                    Вы сможете пообщаться с нашими преподавателями и студентами, познакомиться с колледжем вживую, лично задать интересующие вопросы.
-                    Мы расскажем о поступлении в колледж в 2023 году, направлениях подготовки и программах дополнительного образования, которые реализуются в Московском педагогическом колледже.
-                    <br><br>
-                    Также вы сможете посетить мастер-класс по сурдопереводу, где познакомитесь с языком жестов и узнаете, как его используют профессионалы в своей деятельности при работе с детьми дошкольного возраста.
+                    <div class="offset-1 col-10 section-title">
+                        ОБУЧЕНИЕ В <span class="font-extra-bold">КОЛЛЕДЖЕ</span> — ЭТО ФОКУС НА ПРАКТИКЕ, ПРЕСТИЖ И КАРЬЕРНЫЕ ПЕРСПЕКТИВЫ, ГАРАНТИЯ ТРУДОУСТРОЙСТВА
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 offset-sm-0">
+                            <!--                            <div class="section-subtitle">-->
+                            <!--                                В этом ролике мы покажем тебе, что колледжи — это современные учебные заведения, которые сочетают передовые методы обучения-->
+                            <!--                                с традициями профессионального мастерства.-->
+                            <!--                            </div>-->
+                            <div class="section-subtitle font-extra-bold">Учиться в московском колледже круто!<br> Присоединяйся к сообществу студентов и стань мастером своего дела.</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+                            <div class="video-block">
+                                <div class="btn-play"></div>
+                                <!--                                <img alt="" src="assets/img/video-preview.png">-->
+                                <video id="movie" width="100%" height="100%" poster="assets/img/video-preview.png" controls>
+                                    <source src="assets/video/movie.MOV" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="row">
             </div>
         </div>
     </section>
-
-
-    <section class="page-block6 extra-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12 d-flex justify-content-lg-start justify-content-sm-center">
-                    <div class="section-title text-left">ПОЯВИЛИСЬ ВОПРОСЫ ПО РЕГИСТРАЦИИ?</div>
-                </div>
-                <div class="col-lg-6 col-sm-12 d-flex justify-content-sm-center position-relative">
-                    <div class="right-photo"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-sm-12 d-flex flex-column align-items-lg-start align-items-sm-center">
-                    <div class="zigzag"><img src="assets/img/vector.svg" alt=""></div>
-                    <div class="subtitle">Напиши нам!</div>
-                    <a href=""  class="button btn-open-door" style="font-size: 17px">СВЯЗАТЬСЯ С ТЕХНИЧЕСКОЙ ПОДДЕРЖКОЙ</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
 
     <section class="footer">
         <div class="container">
@@ -324,12 +281,16 @@
             </div>
         </div>
     </section>
-    </div>
-    <script src="assets/js/jquery-3.6.4.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/owl-carousel/owl.carousel.js"></script>
-    <script src="assets/js/scripts.js?3"></script>
+</div>
+
+
+<script src="assets/js/jquery-3.6.4.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/i18n/defaults-ru_RU.js"></script>
+<script src="assets/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/scripts.js?3"></script>
 
 
 

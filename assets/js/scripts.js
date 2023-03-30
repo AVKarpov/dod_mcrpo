@@ -1,7 +1,8 @@
 $(document).ready(function(){
+	$(":input").inputmask();
+
 	$('#btn-dod-modal').on('click', function (){
 		$('.bd-example-modal-lg').modal('show')
-		console.log("nuhhuhnu")
 	})
 	$("#owl-carousel-header").owlCarousel({
 		items: 7,
@@ -10,6 +11,7 @@ $(document).ready(function(){
 		navText: true,
 		loop:true,
 		dots: false,
+		autoplay: false,
 		responsive:{
 			0:{
 				items:2
@@ -34,6 +36,7 @@ $(document).ready(function(){
 		mouseDrag: false,
 		touchDrag: false,
 		pullDrag: false,
+		autoplay: false,
 		responsive:{
 			0:{
 				items:3
@@ -76,6 +79,7 @@ $(document).ready(function(){
 		// navText: ['<', '>'],
 		loop:true,
 		dots: false,
+		autoplay: false,
 		responsive:{
 			0:{
 				items:2
@@ -95,6 +99,72 @@ $(document).ready(function(){
 	$('.prev').on('click', function(){
 		owlSchedule.trigger('prev.owl.carousel');
 	})
+
+
+	const owlFeedback = $("#owl-carousel-feedback").owlCarousel({
+		item: 1,
+		nav: false,
+		dots: false,
+		loop:true,
+		autoplay: true,
+		autoplayTimeout:8000,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:1
+			},
+			1000:{
+				items: 1
+			}
+		}
+	})
+
+	const owlFeedbackMobile = $("#owl-carousel-feedback-mobile").owlCarousel({
+		item: 1,
+		nav: false,
+		dots: false,
+		loop:true,
+		autoplay: true,
+		autoplayTimeout:8000,
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:1
+			},
+			1000:{
+				items: 1
+			}
+		}
+	})
+
+
+	owlFeedback.trigger('play.owl.autoplay',[8000])
+	owlFeedbackMobile.trigger('play.owl.autoplay',[8000])
+
+	let movie = document.getElementById("movie");
+	$('.btn-play').on('click', function (){
+		playPause()
+		$(this).hide()
+	})
+
+	$('#btnSendForm').on('click', function (e){
+		if($('#requestForm').validate({ lang: 'ru'})){
+			if($('[name="patronymic"]').val() !== '' || $('[name="without_patronymic"]').prop('checked')){
+				$('#requestForm').submit()
+			}
+		}
+	})
+
+	function playPause() {
+		if (movie.paused)
+			movie.play();
+		else
+			movie.pause();
+	}
 });
 
 function changeActiveSlider(){

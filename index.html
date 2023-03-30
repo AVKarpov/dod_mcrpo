@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.carousel.css">
     <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css?7">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?14">
 
 </head>
 <body>
@@ -20,10 +20,10 @@
             <div class="ellipse1"></div>
             <div class="ellipse2"></div>
             <div class="align-items-center">
-                <nav class="navbar navbar-expand-lg z-3 d-flex w-100">
+                <nav class="navbar navbar-expand-lg z-10 d-flex w-100">
                     <div class="col-xl-3 col-lg-3 d-flex align-items-center justify-content-start">
-                        <a href="#"><img src="assets/img/mosobr_logo.svg" alt=""></a>
-                        <a href="#"><img src="assets/img/mcrpo_logo.svg" alt=""></a>
+                        <a href="https://www.mos.ru/donm/"><img src="assets/img/mosobr_logo.svg" alt=""></a>
+                        <a href="https://mcrpo.ru/"><img src="assets/img/mcrpo_logo.svg" alt=""></a>
                     </div>
                     <button class="navbar-toggler collapsed position-relative" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar top-bar"></span>
@@ -35,12 +35,12 @@
                         <div class="col-xl-8 col-lg-7 d-flex justify-content-evenly navbar-list-1">
                             <a href="/index.html" class="active">ГЛАВНАЯ</a>
                             <a href="/otrasli.html">ОТРАСЛИ</a>
-                            <a href="#">ПРОФЕССИИ</a>
-                            <a href="#" id="btn-dod-modal" class="spec-menu"  style="color: white" data-toggle="modal" data-target=".bd-example-modal-lg">КОЛЛЕДЖИ</a>
+                            <a href="/professii.html">ПРОФЕССИИ</a>
+                            <a href="/college.html" class="spec-menu"  style="color: white">КОЛЛЕДЖИ</a>
                         </div>
                         <div class="col-xl-4 col-lg-5 d-flex justify-content-evenly navbar-list-2">
-                            <button type="button" class="btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</button>
-                            <button type="button" class="btn-map">КАРТА</button>
+<!--                            <a href="/page.html" class="button btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</a>-->
+                            <a href="/map.html" class="button btn-map">КАРТА</a>
                         </div>
                     </div>
                 </nav>
@@ -48,7 +48,7 @@
         </div>
     </section>
 
-    <!-- Large modal -->
+    <!-- Modal college-->
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-xl">
             <div class="modal-content">
@@ -127,40 +127,100 @@
         </div>
     </div>
 
-    <section class="top d-xl-block d-lg-block d-md-block d-sm-none">
+    <section class="top d-none d-xl-block d-lg-block d-md-block d-sm-none">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-6 mt-5 left-top-block">
                     <div class="title">
-                        ВЫБЕРИ <span style="font-family: 'Akrobat ExtraBold', sans-serif">СВОЙ</span> <br> КОЛЛЕДЖ СТОЛИЦЫ
+                        ВЫБЕРИ <span style="font-family: 'Akrobat ExtraBold', sans-serif">СВОЙ</span> <br> КОЛЛЕДЖ
                     </div>
                     <div class="zigzag"><img src="assets/img/vector.svg" alt=""></div>
-                    <div class="subtitle">Востребованные специальности в девяти профессиональных направлениях ждут тебя <br> в 49 колледжах столицы. </div>
-                    <button type="button" class="btn-open-door btn-open-door__long">Дни открытых дверей</button>
+                    <div class="subtitle">Востребованные специальности и профессии ждут тебя в 49 колледжах столицы.</div>
+                    <a href="/index.html#open-doors" class="button btn-open-door btn-open-door__long">Дни открытых дверей</a>
                 </div>
                 <div class="col-lg-6 col-6 d-flex justify-content-center position-relative girl-block">
                     <div class="girl-group">
                         <div class="sticker">
-                            <div class="smile-image"></div>
-                            более <br> <span class="smile-image-text-1" style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 38px">200</span>
+<!--                            <div class="smile-image"></div>-->
+                            <span class="smile-image-text-1" style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 38px">167</span>
                             <div class="smile-image-text-2" style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 18px; line-height: 107.5%; opacity: 0.8; color: #1E1E1E; text-align: center;">ВОСТРЕБОВАННЫХ ПРОФЕССИЙ</div>
                         </div>
                         <div class="girl-background"></div>
                         <img src="assets/img/girl.svg" alt="" style="position: relative; z-index: 6">
 
                         <div class="feedback-group">
-                            <div class="feedback-stars"></div>
-                            <div class="feedback-text">На втором курсе я прошёл практику на <br> кондитерской фабрике «Красный Октябрь»</div>
-                            <div class="row">
-                                <div class="col-2">
-                                    <div class="feedback-photo"></div>
+                            <div id="owl-carousel-feedback" class="owl-carousel">
+                                <div class="element">
+                                    <div class="feedback-stars"></div>
+                                    <div class="feedback-text">Я была на Дне открытых дверей и осталась очень довольна! Мне понравилось отделение «Архитектура и дизайн», где я сейчас и учусь.</div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="feedback-photo"><img alt="" src="assets/img/feedback-1.png"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="feedback-name">Евгения Пронженко</div>
+                                            <div class="feedback-author-desc"> студентка Колледжа архитектуры, дизайна и реинжиниринга №26 по профессии «Дизайнер среды»</div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-background-img"></div>
                                 </div>
-                                <div class="col-10">
-                                    <div class="feedback-name">Семёнов Егор</div>
-                                    <div class="feedback-author-desc">Студент 2-го курса Колледжа сферы услуг №3 <br> по направлению «Повар-кондитер»</div>
+                                <div class="element">
+                                    <div class="feedback-stars"></div>
+                                    <div class="feedback-text">Колледж дал мне возможность развиваться не только в рамках своей профессии, но и в социальной сфере</div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="feedback-photo"><img alt="" src="assets/img/feedback-2.png"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="feedback-name">Адриан Чувайкин</div>
+                                            <div class="feedback-author-desc">студент Колледжа связи №54 по направлению «Техническое обслуживание и ремонт двигателей, систем и агрегатов автомобилей»</div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-background-img"></div>
+                                </div>
+                                <div class="element">
+                                    <div class="feedback-stars"></div>
+                                    <div class="feedback-text">После практики от колледжа шеф ресторана предложил мне работу на лето с хорошим окладом</div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="feedback-photo"><img alt="" src="assets/img/feedback-3.png"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="feedback-name">Александр Торгонский</div>
+                                            <div class="feedback-author-desc">студент Колледжа сферы услуг № 3 по направлению «Повар, кондитер»</div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-background-img"></div>
+                                </div>
+                                <div class="element">
+                                    <div class="feedback-stars"></div>
+                                    <div class="feedback-text">У колледжа есть кафедра на Технополисе, где есть всё, что нужно для обучения по специальности: станки, компьютеры, запчасти для создания своего квадрокоптера. Мне нравится!</div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="feedback-photo"><img alt="" src="assets/img/feedback-4.png"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="feedback-name">Гусев Денис</div>
+                                            <div class="feedback-author-desc">студент МГОК по специальности «Системный администратор»</div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-background-img"></div>
+                                </div>
+                                <div class="element">
+                                    <div class="feedback-stars"></div>
+                                    <div class="feedback-text">Я не ошибся в выборе профессии и колледжа. Здесь современные лаборатории-мастерские, преподаватели-практики и трудоустройство уже на старших курсах. Скоро буду работать по специальности.</div>
+                                    <div class="row">
+                                        <div class="col-2">
+                                            <div class="feedback-photo"><img alt="" src="assets/img/feedback-5.png"></div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div class="feedback-name">Никита Леваков</div>
+                                            <div class="feedback-author-desc">студент Колледжа Московского транспорта по направлению «Техническая эксплуатация подвижного состава»</div>
+                                        </div>
+                                    </div>
+                                    <div class="feedback-background-img"></div>
                                 </div>
                             </div>
-                            <div class="feedback-background-img"></div>
                         </div>
                     </div>
                 </div>
@@ -169,11 +229,11 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 block-college">
                     <div class="font-regular-30-grey">
-                        Учиться в колледжах Москвы <br> престижно, потому что
+                        Приходи на Дни открытых дверей, чтобы познакомиться с колледжами и
                     </div>
                     <div class="font-extra-30-orange" style="position: relative; margin-top: 7px;">
                         <div class="arrow"></div>
-                        ТЫ ПОЛУЧИШЬ СОВРЕМЕННУЮ <br> ВОСТРЕБОВАННУЮ ПРОФЕССИЮ
+                        ВЫБРАТЬ СВОЕ БУДУЩЕЕ
                     </div>
                 </div>
             </div>
@@ -183,14 +243,14 @@
     <section class="top d-xl-none d-lg-none d-md-none d-sm-block">
         <div class="container">
             <div class="row">
-                <div class="col-7 mt-5 left-top-block">
+                <div class="col-sm-6 mt-5 left-top-block">
                     <div class="title">
-                        ВЫБЕРИ <span style="font-family: 'Akrobat ExtraBold', sans-serif">СВОЙ</span> <br> КОЛЛЕДЖ СТОЛИЦЫ
+                        ВЫБЕРИ <span style="font-family: 'Akrobat ExtraBold', sans-serif">СВОЙ</span> <br> КОЛЛЕДЖ
                     </div>
                     <div class="zigzag"><img src="assets/img/vector.svg" alt=""></div>
                     <div class="sticker">
-                        <div class="smile-image"></div>
-                        более <br> <span class="smile-image-text-1" style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 38px">200</span>
+<!--                        <div class="smile-image"></div>-->
+                        <span class="smile-image-text-1" style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 38px">167</span>
                         <div class="smile-image-text-2" style="font-family: 'Akrobat ExtraBold', sans-serif; font-size: 18px; line-height: 107.5%; opacity: 0.8; color: #1E1E1E; text-align: center;">ВОСТРЕБОВАННЫХ ПРОФЕССИЙ</div>
                     </div>
                 </div>
@@ -198,6 +258,104 @@
                     <div class="girl-group">
                         <div class="girl-background"></div>
                         <img src="assets/img/girl.svg" alt="" style="position: relative; z-index: 6">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="subtitle">Востребованные специальности и профессии ждут тебя в 49 колледжах столицы.</div>
+                    <a href="/index.html#open-doors" class="button btn-open-door btn-open-door__long">Дни открытых дверей</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="feedback-group">
+                        <div id="owl-carousel-feedback-mobile" class="owl-carousel">
+                            <div class="element">
+                                <div class="feedback-stars"></div>
+                                <div class="feedback-text">Я была на Дне открытых дверей и осталась очень довольна! Мне понравилось отделение «Архитектура и дизайн», где я сейчас и учусь.</div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="feedback-photo"><img alt="" src="assets/img/feedback-1.png"></div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="feedback-name">Евгения Пронженко</div>
+                                        <div class="feedback-author-desc"> студентка Колледжа архитектуры, дизайна и реинжиниринга №26 по профессии «Дизайнер среды»</div>
+                                    </div>
+                                </div>
+                                <div class="feedback-background-img"></div>
+                            </div>
+                            <div class="element">
+                                <div class="feedback-stars"></div>
+                                <div class="feedback-text">Колледж дал мне возможность развиваться не только в рамках своей профессии, но и в социальной сфере</div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="feedback-photo"><img alt="" src="assets/img/feedback-2.png"></div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="feedback-name">Адриан Чувайкин</div>
+                                        <div class="feedback-author-desc">студент Колледжа связи №54 по направлению «Техническое обслуживание и ремонт двигателей, систем и агрегатов автомобилей»</div>
+                                    </div>
+                                </div>
+                                <div class="feedback-background-img"></div>
+                            </div>
+                            <div class="element">
+                                <div class="feedback-stars"></div>
+                                <div class="feedback-text">После практики от колледжа шеф ресторана предложил мне работу на лето с хорошим окладом</div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="feedback-photo"><img alt="" src="assets/img/feedback-3.png"></div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="feedback-name">Александр Торгонский</div>
+                                        <div class="feedback-author-desc">студент Колледжа сферы услуг № 3 по направлению «Повар, кондитер»</div>
+                                    </div>
+                                </div>
+                                <div class="feedback-background-img"></div>
+                            </div>
+                            <div class="element">
+                                <div class="feedback-stars"></div>
+                                <div class="feedback-text">У колледжа есть кафедра на Технополисе, где есть всё, что нужно для обучения по специальности: станки, компьютеры, запчасти для создания своего квадрокоптера. Мне нравится!</div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="feedback-photo"><img alt="" src="assets/img/feedback-4.png"></div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="feedback-name">Гусев Денис</div>
+                                        <div class="feedback-author-desc">студент МГОК по специальности «Системный администратор»</div>
+                                    </div>
+                                </div>
+                                <div class="feedback-background-img"></div>
+                            </div>
+                            <div class="element">
+                                <div class="feedback-stars"></div>
+                                <div class="feedback-text">Я не ошибся в выборе профессии и колледжа. Здесь современные лаборатории-мастерские, преподаватели-практики и трудоустройство уже на старших курсах. Скоро буду работать по специальности.</div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="feedback-photo"><img alt="" src="assets/img/feedback-5.png"></div>
+                                    </div>
+                                    <div class="col-10">
+                                        <div class="feedback-name">Никита Леваков</div>
+                                        <div class="feedback-author-desc">студент Колледжа Московского транспорта по направлению «Техническая эксплуатация подвижного состава»</div>
+                                    </div>
+                                </div>
+                                <div class="feedback-background-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 block-college">
+                    <div class="font-regular-30-grey">
+                        Приходи на Дни открытых дверей, чтобы познакомиться с колледжами и
+                    </div>
+                    <div class="font-extra-30-orange" style="position: relative; margin-top: 7px;">
+                        <div class="arrow"></div>
+                        ВЫБРАТЬ СВОЕ БУДУЩЕЕ
                     </div>
                 </div>
             </div>
@@ -215,16 +373,15 @@
                         <a href="" target="_blank"><img alt="" src="assets/img/college-mgok.png"></a>
                         <a href="" target="_blank"><img alt="" src="assets/img/college-24.png"></a>
                         <a href="" target="_blank"><img alt="" src="assets/img/college-transport.png"></a>
-                        <a href="" target="_blank"><img alt="" src="assets/img/college-uslug3.png"></a>
-                        <a href="" target="_blank"><img alt="" src="assets/img/college-uslug3.png"></a>
-                        <a href="" target="_blank"><img alt="" src="assets/img/college-uslug3.png"></a>
+                        <a href="" target="_blank"><img alt="" src="assets/img/college-tehno.png"></a>
+                        <a href="" target="_blank"><img alt="" src="assets/img/college-k54.png"></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="open-doors">
+    <section class="open-doors" id="open-doors">
         <div class="container">
             <div class="row">
                 <div class="col-12 d-flex align-items-start flex-column">
@@ -233,39 +390,39 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7">
+                    <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
                         <div class="background-rectangle">
                             <div class="row align-items-center">
-                                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-text">ОТРАСЛЬ</div>
+                                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-text"><a href="/otrasli.html" class="button btn-open-door d-block w-100" >ОТРАСЛЬ</a></div>
                                 <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                                     <div class="row align-items-center">
-                                        <div class="col-2 right-text fs-85">9</div>
-                                        <div class="col-9 right-text fs-31">ПРОФЕССИОНАЛЬНЫХ СФЕР</div>
+                                        <div class="col-2 right-text fs-85">11</div>
+                                        <div class="col-9 right-text fs-31">ОТРАСЛЕЙ</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row align-items-center">
-                                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-text">ПРОФЕССИЯ</div>
+                                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-text"><a href="/professii.html" class="button btn-open-door d-block w-100">ПРОФЕССИЯ</a></div>
                                 <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                                     <div class="row align-items-center">
-                                        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 right-text fs-85">223</div>
-                                        <div class="col-8 right-text fs-31">ПРОФЕССИИ</div>
+                                        <div class="col-3 col-xl-4 col-lg-4 col-md-3 col-sm-3 right-text fs-85">167</div>
+                                        <div class="col-8 right-text fs-31">ПРОФЕССИЙ И СПЕЦИАЛЬНОСТЕЙ</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row align-items-center">
-                                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-text">КОЛЛЕДЖ</div>
+                                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 left-text"><a href="/college.html" class="button btn-open-door d-block w-100">КОЛЛЕДЖ</a></div>
                                 <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                                     <div class="row align-items-center">
-                                        <div class="col-xl-3 col-lg-3 col-md-2 col-sm-2 right-text fs-85">49</div>
-                                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9  right-text fs-31">КОЛЛЕДЖЕЙ СТОЛИЦЫ</div>
+                                        <div class="col-3 col-xl-3 col-lg-3 col-md-2 col-sm-2 right-text fs-85">49</div>
+                                        <div class="col-9 col-xl-9 col-lg-9 col-md-9 col-sm-9  right-text fs-31">КОЛЛЕДЖЕЙ СТОЛИЦЫ</div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-xl-5 col-lg-5 col-md-4 col-sm-4 position-relative">
+                    <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 position-relative">
                         <div class="open-doors__picture">
                             <div class="open-doors__first-block"><img src="assets/img/opendoor-girl-block.svg" alt=""></div>
                             <div class="open-doors__second-block"><img src="assets/img/opendoor-second-block.svg" alt=""></div>
@@ -283,21 +440,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title">УЗНАЙ <span class="font-extra-bold">БОЛЬШЕ</span> О СРЕДНЕМ<br> ПРОФЕССИОНАЛЬНОМ ОБРАЗОВАНИИ</div>
+                    <div class="offset-1 col-10 section-title">
+                        ОБУЧЕНИЕ В <span class="font-extra-bold">КОЛЛЕДЖЕ</span> — ЭТО ФОКУС НА ПРАКТИКЕ, ПРЕСТИЖ И КАРЬЕРНЫЕ ПЕРСПЕКТИВЫ, ГАРАНТИЯ ТРУДОУСТРОЙСТВА
+                    </div>
                     <div class="row">
                         <div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-12 offset-sm-0">
-                            <div class="section-subtitle">
-                                В этом ролике мы покажем тебе, что колледжи — это современные учебные заведения, которые сочетают передовые методы обучения
-                                с традициями профессионального мастерства.
-                            </div>
-                            <div class="section-subtitle font-extra-bold">Учиться в колледже — престижно!</div>
+                            <div class="section-subtitle font-extra-bold">Учиться в московском колледже круто!<br> Присоединяйся к сообществу студентов и стань мастером своего дела.</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
                             <div class="video-block">
                                 <div class="btn-play"></div>
-                                <img alt="" src="assets/img/video-preview.png">
+<!--                                <img alt="" src="assets/img/video-preview.png">-->
+                                <video id="movie" width="100%" height="100%" poster="assets/img/video-preview.png" controls>
+                                    <source src="assets/video/movie.MOV" type="video/mp4">
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -312,31 +470,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="section-title">ТВОИ ШАГИ ДЛЯ ПОСТУПЛЕНИЯ</div>
+                    <div class="section-title">КАК ВЫБРАТЬ ПОДХОДЯЩИЙ КОЛЛЕДЖ?</div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="steps-item">
                         <div class="steps-item steps-item__icon red icon-1"></div>
-                        <div class="steps-item__text">Приходи на Дни открытых дверей в колледжах города</div>
-                        <div class="steps-item__subtext">Дни открытых дверей проходят регулярно:<br> выбери в расписании то, что тебе интересно</div>
+                        <div class="steps-item__text">Выбери профессию или специальность</div>
+                        <div class="steps-item__subtext">В колледжах столицы можно обучиться по 167 востребованным профессиям и специальностям</div>
                         <div class="step-arrow step-arrow__left"></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="steps-item">
                         <div class="steps-item steps-item__icon orange icon-2"></div>
-                        <div class="steps-item__text">Общайся со студентами и преподавателями, выбирай профессию и колледж</div>
-                        <div class="steps-item__subtext">Задавай вопросы, посещай мастер-классы<br> и экскурсии</div>
+                        <div class="steps-item__text">Выбери колледж</div>
+                        <div class="steps-item__subtext">На свои Дни открытых дверей колледжи Москвы приглашают абитуриентов и их родителей</div>
                         <div class="step-arrow step-arrow__right"></div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="steps-item">
                         <div class="steps-item steps-item__icon cherry icon-3"></div>
-                        <div class="steps-item__text">Подай необходимый пакет документов, жди информацию о зачислении</div>
-                        <div class="steps-item__subtext">Уверены, что ты сделаешь лучший<br> для себя выбор!</div>
+                        <div class="steps-item__text">Зарегистрируйся на<br> День открытых дверей</div>
+                        <div class="steps-item__subtext">Ты можешь посетить неограниченное количество мероприятий!</div>
                     </div>
                 </div>
             </div>
@@ -351,7 +509,122 @@
                     <div class="zigzag"><img src="assets/img/vector.svg" alt=""></div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-7 btn-block">
-                    <button class="btn-open-door btn-soon">Записывайся скорее</button>
+                    <button id="modalRequestform" data-toggle="modal" data-target=".requestForm" class="button btn-open-door btn-soon">Записывайся скорее</button>
+
+                    <div class="modal fade requestForm" tabindex="-1" role="dialog" aria-labelledby="requestForm" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-xl">
+                            <div class="modal-content">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="title">Регистрация</div>
+                                        <div class="sub-title">Для участия в Дне открытых дверей необходимо заполнить форму</div>
+                                    </div>
+                                </div>
+                                <form id="requestForm" action="" method="POST">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="field-block">
+                                                        <label for="surname">Фамилия</label>
+                                                        <input id="surname" type="text" maxlength="50" name="surname" value="" placeholder="Введите фамилию" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="field-block">
+                                                        <label for="name">Имя</label>
+                                                        <input id="name" type="text" maxlength="50" name="name" value="" placeholder="Введите имя" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="field-block">
+                                                        <label for="patronymic">Отчество</label>
+                                                        <input id="patronymic" type="text" maxlength="50" name="patronymic" value="" placeholder="Введите отчество">
+
+                                                        <div class="checkbox-patronymic">
+                                                            <label class="checkbox">
+                                                                <input type="checkbox" name="without_patronymic">
+                                                                <span class="indicator"></span>
+                                                                Без отчества
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="field-block">
+                                                        <label for="birthday">Дата рождения</label>
+                                                        <input id="birthday" type="text" maxlength="50" name="birthday" value="" placeholder="Введите дату рождения" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                            <div class="row">
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="field-block">
+                                                        <label for="class">Номер класса</label>
+                                                        <input id="class" type="number" min="1" max="11" name="class" value="" placeholder="1" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="field-block">
+                                                        <label for="phone">Телефон</label>
+                                                        <input id="phone" type="text" maxlength="50" name="phone" value="" data-inputmask="'mask': '(999) 999-99-99'" placeholder="(999) 999-99-99" required >
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="field-block">
+                                                        <label for="email">Email</label>
+                                                        <input id="email" type="text" maxlength="50" name="email" value="" data-inputmask="'alias': 'email'" placeholder="Введите email" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                                    <div class="field-block p-0">
+                                                        <label class="p-label" for="organization_type">Категория</label>
+                                                        <select id="organization_type" class="selectpicker" required>
+                                                            <option value="" selected disabled>Выберите категорию</option>
+                                                            <option value="Абитуриент">Абитуриент</option>
+                                                            <option value="Законный представитель">Законный представитель</option>
+                                                            <option value="Иное">Иное</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="field-block p-0">
+                                                <label class="p-label" for="organization">Образовательная организация</label>
+                                                <select id="organization" class="selectpicker" required>
+                                                    <option value="" selected disabled>Выберите организацию</option>
+                                                    <option value="1">Технологический колледж N° 21</option>
+                                                    <option value="2">ГБПОУ "26 КАДР"</option>
+                                                    <option value="3">ГБПОУ ТК N°21</option>
+                                                    <option value="4">ГБПОУ Колледж "Царицыно"</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 checkbox-block">
+                                            <label class="checkbox">
+                                                <input type="checkbox" name="agreement" required>
+                                                <span class="indicator"></span>
+                                                Я согласен с условиями <a href="#">обработки персональных данных</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <button id="btnSendForm" class="button" type="submit">Записаться</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -416,8 +689,8 @@
             <div class="container">
                 <div class="carousel" style="position: relative">
                     <div id="owl-carousel-footer" class="owl-carousel owl-theme">
-                        <img alt="" src="assets/img/mediaslider-3.png">
-                        <img alt="" src="assets/img/mediaslider-3.png">
+                        <img alt="" src="assets/img/mediaslider-1.png">
+                        <img alt="" src="assets/img/mediaslider-2.png">
                         <img alt="" src="assets/img/mediaslider-3.png">
                     </div>
                     <div class="carousel-nav-block">
@@ -434,12 +707,12 @@
             <div class="row">
                 <div class="col-6">
                     <div class="footer-block__logo">
-                        <a href="#"><img alt="" src="assets/img/mosobr_logo_footer.svg"></a>
-                        <a href="#"><img alt="" src="assets/img/mcrpo_logo_footer.svg"></a>
+                        <a href="https://www.mos.ru/donm/"><img alt="" src="assets/img/mosobr_logo_footer.svg"></a>
+                        <a href="https://mcrpo.ru/"><img alt="" src="assets/img/mcrpo_logo_footer.svg"></a>
                     </div>
                     <div class="footer-block__social mt-30">
-                        <a href="#"><img alt="" src="assets/img/telegram.svg"></a>
-                        <a href="#"><img alt="" src="assets/img/vk.svg"></a>
+                        <a href="#"><img alt="https://t.me/wsrmoscow" src="assets/img/telegram.svg"></a>
+                        <a href="https://vk.com/mcrpo"><img alt="" src="assets/img/vk.svg"></a>
                     </div>
                 </div>
                 <div class="col-5 offset-1">
@@ -450,13 +723,13 @@
                                     <input type="text" name="search" value="" placeholder="ВВЕДИТЕ СЛОВА ДЛЯ ПОИСКА">
                                 </div>
                                 <div class="col-4">
-                                    <button type="submit">ИСКАТЬ</button>
+                                    <button class="button" type="submit">ИСКАТЬ</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="copyright-block">
-                        2023, ГАО ДПО МЦРПО
+                        2023, ГАОУ ДПО МЦРПО
                     </div>
                 </div>
             </div>
@@ -464,12 +737,16 @@
     </section>
     </div>
     <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/jquery.validate.js"></script>
+    <script src="assets/js/messages_ru.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-select.min.js"></script>
     <script src="assets/js/i18n/defaults-ru_RU.js"></script>
     <script src="assets/owl-carousel/owl.carousel.js"></script>
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/scripts.js?4"></script>
+    <script src="assets/js/jquery.inputmask.min.js"></script>
+    <script src="assets/js/inputmask.binding.js"></script>
 
 
 
