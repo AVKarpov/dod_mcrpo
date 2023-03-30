@@ -1875,6 +1875,70 @@ h3 {
 .dropdown-menu .selected.active .text-muted {
   color: #666666 !important;
 }
+.modalFormSuccess .close {
+  width: 30px;
+  position: absolute;
+  right: 30px;
+  top: 6px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  color: white;
+  font-size: 40px;
+}
+.modalFormSuccess .modal-dialog {
+  -webkit-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  top: 30%;
+  margin: 0 auto;
+}
+.modalFormSuccess .modal-content {
+  padding: 30px 50px;
+  border: 1px solid #F7520F !important;
+  border-radius: 16px !important;
+  background-color: #F7520F;
+}
+.modalFormSuccess .modal-content .title {
+  font-family: 'Akrobat ExtraBold';
+  font-style: normal;
+  font-size: 64px;
+  line-height: 110%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.modalFormSuccess .modal-content .subtitle {
+  font-family: 'Akrobat SemiBold';
+  font-style: normal;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 40px;
+}
+@media (max-width: 992px) {
+  .modalFormSuccess .modal-content .title {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .modalFormSuccess .modal-content .title {
+    font-size: 35px;
+  }
+}
+.requestForm .close {
+  width: 30px;
+  position: absolute;
+  right: 30px;
+  top: 6px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  color: #000;
+  font-size: 40px;
+  z-index: 20;
+  display: inline-block;
+}
 .requestForm .modal-content {
   padding: 30px 50px;
   background: #FFFFFF;

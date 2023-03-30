@@ -510,10 +510,31 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-7 btn-block">
                     <button id="modalRequestform" data-toggle="modal" data-target=".requestForm" class="button btn-open-door btn-soon">Записывайся скорее</button>
+<!--                    <button id="modalFormSuccess" data-toggle="modal" data-target=".modalFormSuccess" class="button btn-open-door btn-soon">Записывайся скорее</button>-->
+
+                    <div class="modal fade modalFormSuccess" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-xl">
+                            <div class="modal-content">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="title">
+                                    Вы успешно записались на День открытых дверей!
+                                </div>
+                                <div class="subtitle">
+                                    Подробная информация отправлена на указанную электронную почту
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
 
                     <div class="modal fade requestForm" tabindex="-1" role="dialog" aria-labelledby="requestForm" aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-xl">
                             <div class="modal-content">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="title">Регистрация</div>

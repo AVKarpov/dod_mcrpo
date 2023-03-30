@@ -2056,8 +2056,75 @@ h3{
 	}
 }
 
-.requestForm{
+.modalFormSuccess{
+	.close{
+		width: 30px;
+		position: absolute;
+		right: 30px;
+		top: 6px;
+		background: transparent;
+		box-shadow: none;
+		border: none;
+		color: white;
+		font-size: 40px;
+	}
+	.modal-dialog{
+		-webkit-transform: translate(0,-50%);
+		-o-transform: translate(0,-50%);
+		transform: translate(0,-50%);
+		top: 30%;
+		margin: 0 auto;
+	}
+	.modal-content {
+		padding: 30px 50px;
+		border: 1px solid #F7520F !important;
+		border-radius: 16px !important;
+		background-color: #F7520F;
+		.title{
+			font-family: 'Akrobat ExtraBold';
+			font-style: normal;
+			font-size: 64px;
+			line-height: 110%;
+			text-align: center;
+			color: #FFFFFF;
+		}
+		.subtitle{
+			font-family: 'Akrobat SemiBold';
+			font-style: normal;
+			font-size: 22px;
+			line-height: 120%;
+			text-align: center;
+			color: #FFFFFF;
+			margin-top: 40px;
+		}
 
+		@media(max-width: 992px){
+			.title{
+				font-size: 50px;
+			}
+		}
+		@media(max-width: 767px){
+			.title{
+				font-size: 35px;
+			}
+		}
+	}
+}
+
+.requestForm{
+	.close{
+		width: 30px;
+		position: absolute;
+		right: 30px;
+		top: 6px;
+		background: transparent;
+		box-shadow: none;
+		border: none;
+		color: #000;
+		font-size: 40px;
+		z-index: 20;
+		display: inline-block;
+	}
 	.modal-content{
 		padding: 30px 50px;
 		background: #FFFFFF;
