@@ -2175,4 +2175,21 @@ h3 {
 .dropdown-menu {
   width: 100% !important;
 }
+.address-block {
+  margin-bottom: 60px;
+}
+.address-block .btn-address {
+  color: #666666;
+  font-size: 22px;
+  font-family: 'Akrobat Regular';
+  padding: 14px 30px 19px;
+  border-radius: 16px;
+  border: 1px solid #DDDDDD;
+  margin-right: 30px;
+}
+.address-block .btn-address.active,
+.address-block .btn-address:hover {
+  background: #F7520F;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
