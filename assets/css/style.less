@@ -2445,6 +2445,152 @@ h3{
 		border-radius: 8px;
 		padding: 11px 20px 13px 20px;
 	}
+}
 
+.rostex{
+	h2, h3{
+		padding-left: 0;
+	}
+	ul{
+		li{
+			margin-bottom: 15px;
+		}
+	}
 
+	&__block{
+		margin-top: 50px;
+		margin-bottom: 130px;
+		background: #FFFFFF;
+		border: 1px solid #EEEEEE;
+		box-shadow: 0px 4px 30px rgba(228, 228, 228, 0.25);
+		border-radius: 16px;
+		padding: 40px;
+		font-size: 22px;
+		&__img{
+			width: 100%;
+			height: 250px;
+			background-image: url('../img/rostex-1.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	&__colleges, &__company{
+		margin-top: 40px;
+		margin-bottom: 130px;
+		display: block;
+		position: relative;
+		&__item{
+			display: inline-block;
+			text-align: center;
+			margin-right: 40px;
+			margin-bottom: 30px;
+			text-decoration: none;
+			&__img{
+				display: block;
+			}
+			&__title{
+				margin-top: 20px;
+				font-size: 13px;
+				color: #888888;
+				display: block;
+			}
+		}
+	}
+	&__company{
+		margin-bottom: 50px;
+	}
+	.video-item{
+		//background: linear-gradient(360deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 50%);
+		border-radius: 16px;
+		overflow: hidden;
+		margin-bottom: 50px;
+		position: relative;
+		.title{
+			font-size: 44px;
+			position: absolute;
+			bottom: 37px;
+			left: 40px;
+			color: #fff;
+			font-family: 'Akrobat SemiBold';
+		}
+
+		.btn-play-group{
+			width: 78px;
+			height: 77px;
+			margin: 0 auto;
+			border: 0;
+			border-radius: 50px;
+			background-image: url("../img/btn-play.svg");
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: absolute;
+			z-index: 10;
+			top: calc(50% - 39px);
+			left: calc(50% - 39px);
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+
+	.profession-list{
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+		margin-bottom: 130px;
+		li{
+			margin-bottom: 30px;
+		}
+		span{
+			color: #F7520F;
+			margin-right: 25px;
+		}
+	}
+
+	.panels-block{
+		margin-bottom: 130px;
+	}
+	.panels{
+		margin-top: 20px;
+		.panel-block{
+			background: #FFFFFF;
+			border: 1px solid #EEEEEE;
+			box-shadow: 0px 4px 30px rgba(228, 228, 228, 0.25);
+			border-radius: 16px;
+			padding: 40px;
+
+			h4{
+				font-size: 22px;
+				color: #F7520F;
+				font-family: 'Akrobat SemiBold';
+				line-height: 140%;
+			}
+
+			p{
+				font-size: 22px;
+				font-family: 'Akrobat Regular';
+			}
+		}
+	}
+
+	.panels-group-two{
+		margin-top: 40px;
+		.panel-block{
+			padding: 30px;
+			width: 100%;
+			&__img{
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			p{
+				text-align: center;
+				font-family: "Akrobat SemiBold";
+			}
+		}
+		.col-sm-12{
+			display: flex;
+		}
+	}
 }

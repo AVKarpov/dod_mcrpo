@@ -159,6 +159,27 @@ $(document).ready(function(){
 		}
 	})
 
+	$('.video-player').on('click', function (){
+		playPauseGroup(this)
+	})
+	$('.btn-play-group').on('click', function (){
+		let el = this.closest('.video-item').children[1]
+		playPauseGroup(el)
+	})
+
+	function playPauseGroup(e){
+		if (e.paused) {
+			$(e).closest('.video-item').find('.btn-play-group').hide()
+			$(e).closest('.video-item').find('.title').hide()
+			e.play()
+		}
+		else {
+			e.pause()
+			$(e).closest('.video-item').find('.btn-play-group').show()
+			$(e).closest('.video-item').find('.title').show()
+		}
+	}
+
 	function playPause() {
 		if (movie.paused)
 			movie.play();
