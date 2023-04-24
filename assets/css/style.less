@@ -396,6 +396,39 @@ body {
 .navbar{
 	padding-left: 12px;
 	padding-right: 12px;
+
+	#navbarSupportedContent{
+		padding-left: 40px;
+	}
+	.navbar-collapse{
+		a{
+			margin-right: 32px;
+			border: 1px solid transparent;
+		}
+		.rostex-menu{
+			position: absolute;
+			left: 0;
+			bottom: -30px;
+			border: 1px solid transparent;
+			&:hover, &.active{
+
+			}
+		}
+		.navbar-list-1{
+			justify-content: flex-start !important;
+		}
+	}
+
+	.btn-map{
+		border: 1px solid #F6520F !important;
+	}
+}
+
+.navbar-collapse.collapsing{
+	.rostex-menu{
+		position: relative;
+		bottom: 0;
+	}
 }
 
 .navbar-collapse.collapse.show .navbar-list-1, .navbar-list-2{
@@ -422,6 +455,15 @@ body {
 			text-align: left;
 			min-height: auto;
 
+		}
+
+		.btn-map{
+			border: 1px solid transparent !important;
+		}
+
+		.rostex-menu{
+			position: relative;
+			bottom: 0;
 		}
 	}
 
@@ -2375,4 +2417,222 @@ h3{
 
 .dropdown-menu{
 	width: 100% !important;
+}
+
+
+.address-block {
+	.btn-address {
+		color: #666666;
+		font-size: 22px;
+		font-family: 'Akrobat Regular';
+		padding: 14px 30px 19px;
+		border-radius: 16px;
+		border: 1px solid #DDDDDD;
+		margin-right: 30px;
+
+		&.active, &:hover{
+			background: #F7520F;
+			color: #fff;
+		}
+	}
+
+	margin-bottom: 60px;
+}
+
+.banner-block{
+	margin-bottom: 100px;
+	background: #244B98;
+	border-radius: 16px;
+	padding: 30px;
+
+	&__header{
+		background: #FFFFFF;
+		border-radius: 8px;
+		color: #244B98;
+		font-size: 28px;
+		font-family: 'Akrobat ExtraBold';
+		text-transform: uppercase;
+		padding: 9px 20px 12px;
+		margin-bottom: 20px;
+	}
+	&__text{
+		p{
+			font-size: 16px;
+			color: #fff;
+			font-family: 'Akrobat SemiBold';
+		}
+	}
+
+	&__img{
+		position: absolute;
+		bottom: -30px;
+		background-position: bottom;
+		background-size: contain;
+		height: 100%;
+		width: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.more-btn{
+		display: inline-block;
+		position: relative;
+		font-family: 'Akrobat SemiBold';
+		font-style: normal;
+		font-size: 16px;
+		line-height: 140%;
+		color: #F7520F;
+		margin-top: 15px;
+		background-color: #fff;
+		border: transparent;
+		border-radius: 8px;
+		padding: 11px 20px 13px 20px;
+	}
+}
+
+.rostex{
+	h2, h3{
+		padding-left: 0;
+	}
+	ul{
+		li{
+			margin-bottom: 15px;
+		}
+	}
+
+	&__block{
+		margin-top: 50px;
+		margin-bottom: 130px;
+		background: #FFFFFF;
+		border: 1px solid #EEEEEE;
+		box-shadow: 0px 4px 30px rgba(228, 228, 228, 0.25);
+		border-radius: 16px;
+		padding: 40px;
+		font-size: 22px;
+		&__img{
+			width: 100%;
+			height: 250px;
+			background-image: url('../img/rostex-1.png');
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	&__colleges, &__company{
+		margin-top: 40px;
+		margin-bottom: 130px;
+		display: block;
+		position: relative;
+		&__item{
+			display: inline-block;
+			text-align: center;
+			margin-right: 40px;
+			margin-bottom: 30px;
+			text-decoration: none;
+			&__img{
+				display: block;
+			}
+			&__title{
+				margin-top: 20px;
+				font-size: 13px;
+				color: #888888;
+				display: block;
+			}
+		}
+	}
+	&__company{
+		margin-bottom: 50px;
+	}
+	.video-item{
+		//background: linear-gradient(360deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 50%);
+		border-radius: 16px;
+		overflow: hidden;
+		margin-bottom: 50px;
+		position: relative;
+		.title{
+			font-size: 44px;
+			position: absolute;
+			bottom: 37px;
+			left: 40px;
+			color: #fff;
+			font-family: 'Akrobat SemiBold';
+		}
+
+		.btn-play-group{
+			width: 78px;
+			height: 77px;
+			margin: 0 auto;
+			border: 0;
+			border-radius: 50px;
+			background-image: url("../img/btn-play.svg");
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: absolute;
+			z-index: 10;
+			top: calc(50% - 39px);
+			left: calc(50% - 39px);
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+
+	.profession-list{
+		list-style-type: none;
+		margin-left: 0;
+		padding-left: 0;
+		margin-bottom: 130px;
+		li{
+			margin-bottom: 30px;
+		}
+		span{
+			color: #F7520F;
+			margin-right: 25px;
+		}
+	}
+
+	.panels-block{
+		margin-bottom: 130px;
+	}
+	.panels{
+		margin-top: 20px;
+		.panel-block{
+			background: #FFFFFF;
+			border: 1px solid #EEEEEE;
+			box-shadow: 0px 4px 30px rgba(228, 228, 228, 0.25);
+			border-radius: 16px;
+			padding: 40px;
+
+			h4{
+				font-size: 22px;
+				color: #F7520F;
+				font-family: 'Akrobat SemiBold';
+				line-height: 140%;
+			}
+
+			p{
+				font-size: 22px;
+				font-family: 'Akrobat Regular';
+			}
+		}
+	}
+
+	.panels-group-two{
+		margin-top: 40px;
+		.panel-block{
+			padding: 30px;
+			width: 100%;
+			&__img{
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			p{
+				text-align: center;
+				font-family: "Akrobat SemiBold";
+			}
+		}
+		.col-sm-12{
+			display: flex;
+		}
+	}
 }

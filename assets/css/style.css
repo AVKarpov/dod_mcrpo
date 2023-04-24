@@ -350,6 +350,29 @@ body {
   padding-left: 12px;
   padding-right: 12px;
 }
+.navbar #navbarSupportedContent {
+  padding-left: 40px;
+}
+.navbar .navbar-collapse a {
+  margin-right: 32px;
+  border: 1px solid transparent;
+}
+.navbar .navbar-collapse .rostex-menu {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  border: 1px solid transparent;
+}
+.navbar .navbar-collapse .navbar-list-1 {
+  justify-content: flex-start !important;
+}
+.navbar .btn-map {
+  border: 1px solid #F6520F !important;
+}
+.navbar-collapse.collapsing .rostex-menu {
+  position: relative;
+  bottom: 0;
+}
 @media (max-width: 992px) {
   .navbar-collapse.collapse.show .navbar-list-1 a,
   .navbar-list-2 a {
@@ -375,6 +398,15 @@ body {
     width: 100%;
     text-align: left;
     min-height: auto;
+  }
+  .navbar-collapse.collapse.show .navbar-list-1 .btn-map,
+  .navbar-list-2 .btn-map {
+    border: 1px solid transparent !important;
+  }
+  .navbar-collapse.collapse.show .navbar-list-1 .rostex-menu,
+  .navbar-list-2 .rostex-menu {
+    position: relative;
+    bottom: 0;
   }
 }
 .navbar-collapse.collapse.show .navbar-list-1 .active,
@@ -2174,5 +2206,205 @@ h3 {
 }
 .dropdown-menu {
   width: 100% !important;
+}
+.address-block {
+  margin-bottom: 60px;
+}
+.address-block .btn-address {
+  color: #666666;
+  font-size: 22px;
+  font-family: 'Akrobat Regular';
+  padding: 14px 30px 19px;
+  border-radius: 16px;
+  border: 1px solid #DDDDDD;
+  margin-right: 30px;
+}
+.address-block .btn-address.active,
+.address-block .btn-address:hover {
+  background: #F7520F;
+  color: #fff;
+}
+.banner-block {
+  margin-bottom: 100px;
+  background: #244B98;
+  border-radius: 16px;
+  padding: 30px;
+}
+.banner-block__header {
+  background: #FFFFFF;
+  border-radius: 8px;
+  color: #244B98;
+  font-size: 28px;
+  font-family: 'Akrobat ExtraBold';
+  text-transform: uppercase;
+  padding: 9px 20px 12px;
+  margin-bottom: 20px;
+}
+.banner-block__text p {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Akrobat SemiBold';
+}
+.banner-block__img {
+  position: absolute;
+  bottom: -30px;
+  background-position: bottom;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+.banner-block .more-btn {
+  display: inline-block;
+  position: relative;
+  font-family: 'Akrobat SemiBold';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #F7520F;
+  margin-top: 15px;
+  background-color: #fff;
+  border: transparent;
+  border-radius: 8px;
+  padding: 11px 20px 13px 20px;
+}
+.rostex h2,
+.rostex h3 {
+  padding-left: 0;
+}
+.rostex ul li {
+  margin-bottom: 15px;
+}
+.rostex__block {
+  margin-top: 50px;
+  margin-bottom: 130px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 4px 30px rgba(228, 228, 228, 0.25);
+  border-radius: 16px;
+  padding: 40px;
+  font-size: 22px;
+}
+.rostex__block__img {
+  width: 100%;
+  height: 250px;
+  background-image: url('../img/rostex-1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.rostex__colleges,
+.rostex__company {
+  margin-top: 40px;
+  margin-bottom: 130px;
+  display: block;
+  position: relative;
+}
+.rostex__colleges__item,
+.rostex__company__item {
+  display: inline-block;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+.rostex__colleges__item__img,
+.rostex__company__item__img {
+  display: block;
+}
+.rostex__colleges__item__title,
+.rostex__company__item__title {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #888888;
+  display: block;
+}
+.rostex__company {
+  margin-bottom: 50px;
+}
+.rostex .video-item {
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  position: relative;
+}
+.rostex .video-item .title {
+  font-size: 44px;
+  position: absolute;
+  bottom: 37px;
+  left: 40px;
+  color: #fff;
+  font-family: 'Akrobat SemiBold';
+}
+.rostex .video-item .btn-play-group {
+  width: 78px;
+  height: 77px;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 50px;
+  background-image: url("../img/btn-play.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 10;
+  top: calc(50% - 39px);
+  left: calc(50% - 39px);
+}
+.rostex .video-item .btn-play-group:hover {
+  cursor: pointer;
+}
+.rostex .profession-list {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-bottom: 130px;
+}
+.rostex .profession-list li {
+  margin-bottom: 30px;
+}
+.rostex .profession-list span {
+  color: #F7520F;
+  margin-right: 25px;
+}
+.rostex .panels-block {
+  margin-bottom: 130px;
+}
+.rostex .panels {
+  margin-top: 20px;
+}
+.rostex .panels .panel-block {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 4px 30px rgba(228, 228, 228, 0.25);
+  border-radius: 16px;
+  padding: 40px;
+}
+.rostex .panels .panel-block h4 {
+  font-size: 22px;
+  color: #F7520F;
+  font-family: 'Akrobat SemiBold';
+  line-height: 140%;
+}
+.rostex .panels .panel-block p {
+  font-size: 22px;
+  font-family: 'Akrobat Regular';
+}
+.rostex .panels-group-two {
+  margin-top: 40px;
+}
+.rostex .panels-group-two .panel-block {
+  padding: 30px;
+  width: 100%;
+}
+.rostex .panels-group-two .panel-block__img {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.rostex .panels-group-two .panel-block p {
+  text-align: center;
+  font-family: "Akrobat SemiBold";
+}
+.rostex .panels-group-two .col-sm-12 {
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
