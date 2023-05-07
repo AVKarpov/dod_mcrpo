@@ -186,7 +186,23 @@ $(document).ready(function(){
 		else
 			movie.pause();
 	}
+
+	initCalendar($('#demo'));
 });
+
+function initCalendar(el){
+	$('#ca').calendar({
+		// options
+		format: 'dd',
+		width: el.width(),
+		height: el.width(),
+
+	});
+}
+
+window.addEventListener('resize', function(event) {
+	initCalendar($('#demo'));
+}, true)
 
 function changeActiveSlider(){
 	$('#owl-carousel-footer .owl-item').removeClass('slide-center')
