@@ -2469,16 +2469,22 @@ h3{
 	padding: 30px;
 
 	&__header{
-		background: #FFFFFF;
-		border-radius: 8px;
+		//border-radius: 8px;
 		color: #244B98;
 		font-size: 28px;
 		font-family: 'Akrobat ExtraBold';
 		text-transform: uppercase;
-		padding: 9px 20px 12px;
+		padding: 3px;
 		margin-bottom: 20px;
+
+		display: inline;
+		background-color: #fff;
+		line-height: 58px;
+		outline: white solid 3px;
+		-moz-outline: white solid 3px;
 	}
 	&__text{
+		margin-top: 20px;
 		p{
 			font-size: 16px;
 			color: #fff;
@@ -2752,5 +2758,20 @@ h3{
 		width: 500px !important;
 		padding: 10px !important;
 		font-size: 1.5em;
+	}
+}
+
+.btn-more{
+	position: absolute;
+	bottom: 15px;
+	right: 30px;
+	background: #FFFFFF;
+	border-radius: 8px;
+	font-family: 'Akrobat SemiBold';
+	font-size: 16px;
+	color: #F7520F;
+	&:hover{
+		background-color: #F7520F;
+		color: #fff;
 	}
 }
