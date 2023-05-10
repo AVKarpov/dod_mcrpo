@@ -2499,6 +2499,9 @@ h3 {
 #demo p {
   margin: 0 !important;
 }
+.calendar-label p {
+  margin-bottom: 0px !important;
+}
 #demo input {
   margin: 10px 0 !important;
   height: 28px !important;
@@ -2527,5 +2530,33 @@ h3 {
 .btn-more:hover {
   background-color: #F7520F;
   color: #fff;
+}
+.calendar-block {
+  margin-bottom: 130px;
+  display: flex;
+}
+.calendar-block #demo {
+  width: 100% !important;
+}
+.calendar-profession-block {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-shadow: 0px 4px 4px rgba(228, 228, 228, 0.25);
+  border-radius: 16px;
+  padding: 20px 30px;
+}
+.calendar-profession-block p {
+  font-family: 'Akrobat SemiBold';
+  font-size: 20px;
+  line-height: 140%;
+  color: #333333;
+}
+.calendar-profession-block li {
+  font-family: 'Akrobat Regular';
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+h3 {
+  padding-left: 0;
 }
 /*# sourceMappingURL=style.css.map */
