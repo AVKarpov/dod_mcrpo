@@ -187,7 +187,9 @@ $(document).ready(function(){
 			movie.pause();
 	}
 
-	initCalendar($('#demo'));
+	if($('#demo').length > 0) {
+		initCalendar($('#demo'));
+	}
 });
 
 function initCalendar(el){
@@ -201,7 +203,9 @@ function initCalendar(el){
 }
 
 window.addEventListener('resize', function(event) {
-	initCalendar($('#demo'));
+	if($('#demo').length > 0) {
+		initCalendar($('#demo'));
+	}
 }, true)
 
 function changeActiveSlider(){
