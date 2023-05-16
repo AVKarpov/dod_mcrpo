@@ -29,7 +29,7 @@ $(document).ready(function(){
 	let owlFooter = $("#owl-carousel-footer").owlCarousel({
 		items: 3,
 		margin: 20,
-		nav: true,
+		nav: false,
 		//navText: true,
 		loop:true,
 		dots: false,

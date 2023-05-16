@@ -921,26 +921,33 @@ body {
 .multimedia .container-multimedia-slider {
   padding: 30px  0 56px 0 ;
 }
-.multimedia .container-multimedia-slider #owl-carousel-footer .owl-item {
+#owl-carousel-footer .owl-item,
+#owl-carousel-rostex .owl-item {
   transition-duration: 0.5s;
 }
-.multimedia .container-multimedia-slider #owl-carousel-footer .owl-item img {
+#owl-carousel-footer .owl-item img,
+#owl-carousel-rostex .owl-item img,
+#owl-carousel-footer .owl-item video,
+#owl-carousel-rostex .owl-item video {
   border: 1px solid transparent;
   border-radius: 1rem;
   overflow: hidden;
 }
-.multimedia .container-multimedia-slider #owl-carousel-footer .owl-item.active {
+#owl-carousel-footer .owl-item.active,
+#owl-carousel-rostex .owl-item.active {
   border: none;
   z-index: 2;
 }
-.multimedia .container-multimedia-slider #owl-carousel-footer .owl-stage {
+#owl-carousel-footer .owl-stage,
+#owl-carousel-rostex .owl-stage {
   padding: 45px 0;
 }
-.multimedia .container-multimedia-slider #owl-carousel-footer .slide-center {
+#owl-carousel-footer .slide-center,
+#owl-carousel-rostex .slide-center {
   scale: 1.3;
   z-index: 99 !important;
 }
-.multimedia .container-multimedia-slider .carousel-nav-block {
+.carousel-nav-block {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -948,7 +955,7 @@ body {
   width: 100%;
   height: 100%;
 }
-.multimedia .container-multimedia-slider .carousel-nav-block .nav-prev {
+.carousel-nav-block .nav-prev {
   position: absolute;
   top: 0;
   left: 0;
@@ -956,7 +963,7 @@ body {
   width: 28%;
   z-index: 99;
 }
-.multimedia .container-multimedia-slider .carousel-nav-block .nav-next {
+.carousel-nav-block .nav-next {
   position: absolute;
   top: 0;
   right: 0;
@@ -2350,16 +2357,19 @@ h3 {
   margin-bottom: 50px;
 }
 .rostex .video-item {
-  border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 50px;
   position: relative;
 }
 .rostex .video-item .title {
-  font-size: 44px;
+  font-size: 22px;
   position: absolute;
-  bottom: 37px;
-  left: 40px;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   font-family: 'Akrobat SemiBold';
 }
