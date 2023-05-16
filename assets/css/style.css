@@ -2388,6 +2388,16 @@ h3 {
 .rostex .profession-list li {
   margin-bottom: 20px;
 }
+.rostex .profession-list li a {
+  text-decoration: none;
+  color: #1E1E1E;
+}
+.rostex .profession-list li a:hover {
+  color: #F7520F !important;
+}
+.rostex .profession-list li:hover {
+  color: #F7520F !important;
+}
 .rostex .profession-list span {
   color: #F7520F;
   margin-right: 25px;
