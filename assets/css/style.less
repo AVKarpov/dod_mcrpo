@@ -1023,10 +1023,16 @@ body {
 
 	.owl-stage{
 		padding: 45px 0;
+		@media(max-width: 768px){
+			padding: 67px 0;
+		}
 	}
 	.slide-center{
 		scale: 1.3;
 		z-index: 99 !important;
+		@media(max-width: 768px){
+			scale: 1.8;
+		}
 	}
 }
 .carousel-nav-block{
@@ -2571,6 +2577,10 @@ h3{
 	}
 	&__company{
 		margin-bottom: 50px;
+		@media(max-width: 768px){
+			display: flex;
+			flex-direction: column;
+		}
 	}
 	.video-item{
 		//background: linear-gradient(360deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 50%);
@@ -2581,7 +2591,7 @@ h3{
 		.title{
 			font-size: 22px;
 			position: absolute;
-			bottom: 30px;
+			bottom: 15px;
 			left: 0;
 			width: 100%;
 			text-align: center;
@@ -2590,6 +2600,15 @@ h3{
 			margin-right: auto;
 			color: #fff;
 			font-family: 'Akrobat SemiBold';
+
+			@media(max-width: 992px){
+				font-size: 15px;
+				bottom: 17px;
+			}
+			@media(max-width: 768px){
+				font-size: 13px;
+				bottom: 7px;
+			}
 		}
 
 		.btn-play-group{
@@ -2608,7 +2627,14 @@ h3{
 			&:hover{
 				cursor: pointer;
 			}
+			@media(max-width: 992px){
+				scale: 0.7;
+			}
+			@media(max-width: 768px){
+				scale: 0.4;
+			}
 		}
+
 	}
 
 	.profession-list{
@@ -2632,6 +2658,9 @@ h3{
 			color: #F7520F;
 			margin-right: 25px;
 			font-family: 'Akrobat Bold';
+			@media(max-width: 768px){
+				display: block;
+			}
 		}
 	}
 
@@ -2679,6 +2708,10 @@ h3{
 			display: flex;
 		}
 	}
+
+	.rostex-banner__img{
+		display: none;
+	}
 }
 
 .rostex-banner{
@@ -2716,6 +2749,71 @@ h3{
 		color: #000000;
 	}
 }
+
+@media(max-width:1200px){
+	.rostex-banner{
+		padding: 15px 30px;
+		p{
+			font-size: 30px;
+		}
+	}
+}
+@media(max-width:992px){
+	h2{
+		font-size: 41px;
+	}
+	h3{
+		font-size: 35px;
+	}
+	.rostex-banner{
+		padding: 15px 30px;
+		p{
+			font-size: 25px;
+		}
+	}
+	.section{
+		margin-top: 60px !important;
+	}
+}
+@media(max-width:860px){
+	.rostex-banner{
+		padding: 10px 30px;
+		p{
+			font-size: 25px;
+		}
+	}
+}
+@media(max-width:768px){
+	h2{
+		font-size: 25px;
+	}
+	.rostex-banner{
+		padding: 0;
+		background-image: none;
+		background-size: contain;
+		&__img{
+			display: block !important;
+			width: 100%;
+			position: relative;
+		}
+		p{
+			position: absolute;
+			z-index: 2;
+			left: 10vw;
+			top: 11%;
+			font-size: 7vw;
+		}
+		p.small{
+			top: 33%;
+			font-size: 5vw;
+		}
+	}
+}
+
+@media(max-width:320px){
+
+}
+
 .section{
 	h2, .bold{
 		font-family: 'Akrobat Bold';
