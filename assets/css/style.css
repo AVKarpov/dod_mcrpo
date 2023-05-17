@@ -2354,9 +2354,21 @@ h3 {
   margin-bottom: 30px;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  .rostex__colleges__item,
+  .rostex__company__item {
+    width: 100%;
+  }
+}
 .rostex__colleges__item__img,
 .rostex__company__item__img {
   display: block;
+}
+@media (max-width: 768px) {
+  .rostex__colleges__item__img img,
+  .rostex__company__item__img img {
+    max-width: 100%;
+  }
 }
 .rostex__colleges__item__title,
 .rostex__company__item__title {
@@ -2452,6 +2464,8 @@ h3 {
   color: #F7520F;
   margin-right: 25px;
   font-family: 'Akrobat Bold';
+  width: 54px;
+  display: inline-block;
 }
 @media (max-width: 768px) {
   .rostex .profession-list span {
