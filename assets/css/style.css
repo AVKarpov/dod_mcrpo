@@ -1064,7 +1064,14 @@ body {
 }
 .footer {
   background-color: #204FC4;
-  padding: 30px 0 58px 0;
+  padding: 30px 0 0 0;
+}
+.footer .container {
+  background-image: url('../img/airplane.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 60px;
+  padding-bottom: 60px;
 }
 .footer .mt-30 {
   margin-top: 30px;
@@ -2371,6 +2378,7 @@ h3 {
 }
 .banner-block__text {
   margin-top: 20px;
+  min-height: 250px;
 }
 .banner-block__text p {
   font-size: 16px;
