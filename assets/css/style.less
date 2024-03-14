@@ -801,14 +801,13 @@ body {
 			width: 78px;
 			height: 77px;
 			margin: 0 auto;
-			border: 5px solid #fff;
+			border: 10px solid rgb(13, 64, 191);
 			border-radius: 50px;
 			background-image: url("../img/btn-play.svg");
 			background-repeat: no-repeat;
 			background-position: center center;
 			position: absolute;
 			z-index: 10;
-			//left: 45%;
 			top: -35px;
 			&:hover{
 				cursor: pointer;
@@ -2017,9 +2016,11 @@ body {
 			padding: 15px 30px;
 			border: 1px solid #DDDDDD;
 			border-radius: 16px;
-			color: #666;
+			//color: #666;
+			color: #ffffff;
 			font-size: 22px;
-			font-family: "Akrobat Light";
+			font-family: "Akrobat Regular", sans-serif;
+			font-weight: 500;
 			margin-right: 30px;
 			margin-bottom: 30px;
 
@@ -2034,6 +2035,8 @@ body {
 
 	.select-block {
 		margin-bottom: 54px;
+		position: relative;
+		z-index: 2;
 		.bootstrap-select.show{
 			.dropdown-toggle::after{
 				transform: rotate(180deg) !important;
@@ -2062,9 +2065,10 @@ body {
 			.dropdown-menu.inner {
 				li {
 					a {
-						font-family: 'Akrobat Regular';
+						font-family: 'Akrobat SemiBold';
 						font-style: normal;
 						font-size: 22px;
+						font-weight: 600;
 						line-height: 140%;
 						color: #1E1E1E;
 
@@ -2098,22 +2102,24 @@ body {
 			&.active, &:hover{
 				cursor: pointer;
 				border: 1px solid #FBB193;
-				.place-item__title{
+				.place-item__title, .place-item__description {
 					color: #F7520F;
 				}
 			}
 
 			&__title{
-				font-family: 'Akrobat SemiBold';
+				font-family: 'Akrobat ExtraBold';
 				font-style: normal;
 				font-size: 22px;
+				font-weight: 700;
 				line-height: 140%;
 				color: #1E1E1E;
 				margin-bottom: 5px;
 			}
 			&__description{
-				font-family: 'Akrobat Light';
+				font-family: 'Akrobat Regular';
 				font-style: normal;
+				font-weight: 500;
 				font-size: 22px;
 				line-height: 140%;
 				color: #666666;
@@ -2122,10 +2128,11 @@ body {
 	}
 
 	.info-block{
-		margin-bottom: 150px;
+		margin-bottom: 95px;
 		border: 1px solid #EEEEEE;
-		box-shadow: 0px 4px 30px rgba(228, 228, 228, 0.25);
+		box-shadow: 0 4px 30px rgba(228, 228, 228, 0.25);
 		border-radius: 16px;
+		background-color: #fff;
 
 		&__header{
 			padding: 20px 30px;
@@ -2142,7 +2149,7 @@ body {
 				font-style: normal;
 				font-size: 18px;
 				line-height: 140%;
-				color: #333333;
+				color: #666666;
 			}
 		}
 
@@ -2202,18 +2209,20 @@ body {
 					}
 				}
 				.date-block{
-					font-family: 'Akrobat SemiBold';
+					font-family: 'Akrobat Bold', sans-serif;
 					font-style: normal;
+					font-weight: 700;
 					font-size: 22px;
 					line-height: 140%;
 					color: #FBB193;
 				}
 				.time-block{
-					font-family: 'Akrobat Light';
+					font-family: 'Akrobat Regular', sans-serif;
 					font-style: normal;
+					font-weight: 500;
 					font-size: 16px;
 					line-height: 140%;
-					color: #333333;
+					color: #666666;
 				}
 			}
 		}
@@ -2238,9 +2247,9 @@ body {
 			color: #F7520F;
 			padding: 15px 0;
 			margin-top: 45px;
-			background-color: #fff;
-			border: 1px solid #F7520F;
-			border-radius: 16px;
+			background-color: #D64A281A;
+			border: 1px solid #D64A281A;
+			border-radius: 0 0 16px 16px;
 			&:hover{
 				background-color: #F7520F;
 				color: #fff;
@@ -2248,23 +2257,35 @@ body {
 		}
 
 	}
+
+	.background-lines{
+		position: absolute;
+		top: -10%;
+		left: -10%;
+		width: 120%;
+		height: auto;
+		z-index: 1;
+	}
 }
 
 h2{
-	font-family: 'Akrobat SemiBold';
+	font-family: 'Akrobat ExtraBold';
 	font-style: normal;
 	font-size: 64px;
+	font-weight: 800;
 	line-height: 130%;
-	color: #1E1E1E !important;
+	//color: #1E1E1E !important;
+	color: #ffffff !important;
 	margin-bottom: 35px;
 }
 
 h3{
-	font-family: 'Akrobat SemiBold';
+	font-family: 'Akrobat ExtraBold';
 	font-style: normal;
 	font-size: 44px;
 	line-height: 130%;
-	color: #1E1E1E;
+	//color: #1E1E1E;
+	color: #ffffff !important;
 	padding-left: 30px;
 	margin-bottom: 35px;
 }
