@@ -7,8 +7,13 @@
 @text-color: #FFFFFF;
 @btn-color: #D64A28;
 
+@font-regular: 'Akrobat Regular', sans-serif;
+@font-semibold: 'Akrobat SemiBold', sans-serif;
+@font-bold: 'Akrobat Bold', sans-serif;
+@font-extrabold: 'Akrobat ExtraBold', sans-serif;
+
 body {
-    font-family: 'Akrobat Regular', sans-serif;
+    font-family: @font-regular;
     font-size: 18px;
     color: #1E1E1E;
 	background-color: @background-color;
@@ -27,12 +32,9 @@ body {
     overflow-x: clip;
 
     .container a {
-        font-family: 'Akrobat SemiBold', sans-serif;
-        font-style: normal;
-        font-weight: 600;
+        font-family: @font-semibold;
         font-size: 19px;
         line-height: 23px;
-        /* identical to box height */
         letter-spacing: 0.02em;
         color: #1E1E1E;
         text-decoration: none;
@@ -42,7 +44,6 @@ body {
 .header-block {
     position: relative;
     padding: 20px 0;
-    //z-index: 3;
 
 	@media (max-width: 992px) {
 		width: 100%;
@@ -59,12 +60,9 @@ body {
 }
 
 .button {
-    font-family: 'Akrobat Bold', sans-serif;
-    font-style: normal;
-    font-weight: 700;
+    font-family: @font-semibold;
     font-size: 18px;
     line-height: 22px;
-    /* identical to box height */
     letter-spacing: 0.02em;
     text-decoration: none;
     min-height: 54px;
@@ -110,7 +108,7 @@ body {
     margin-top: 35px;
 
     .title {
-        font-family: 'Akrobat ExtraBold', sans-serif;
+        font-family: @font-extrabold;
         font-size: 68px;
         line-height: 82px;
         letter-spacing: 0;
@@ -130,7 +128,7 @@ body {
     }
 
     .subtitle {
-        font-family: 'Akrobat SemiBold', sans-serif;
+        font-family: @font-semibold;
         font-size: 24px;
         line-height: 29px;
         letter-spacing: 0;
@@ -141,7 +139,7 @@ body {
 
 	.spec-text{
 		color: @menu-color-active;
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		font-size: 32px;
 		line-height: 38px;
 		letter-spacing: 0;
@@ -189,7 +187,7 @@ body {
 		}
 
 		.feedback-text {
-			font-family: 'Akrobat SemiBold', sans-serif;
+			font-family: @font-semibold;
 			font-size: 18px;
 			line-height: 20px;
 			letter-spacing: 0.03em;
@@ -204,13 +202,10 @@ body {
 			height: 56px;
 			left: 0;
 			top: 0;
-			//background-image: url("../img/feedback_author_photo.png");
-			//background-repeat: no-repeat;
-			//background-size: cover;
 		}
 
 		.feedback-name {
-			font-family: 'Akrobat ExtraBold', sans-serif;
+			font-family: @font-extrabold;
 			line-height: 22px;
 		}
 
@@ -245,7 +240,7 @@ body {
 	padding-bottom: 90px;
 
 	.section-title {
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		font-size: 68px;
 		line-height: 82px;
 		color: @text-color;
@@ -255,7 +250,7 @@ body {
 
 	.section-subtitle {
 		color: @text-color;
-		font-family: 'Akrobat SemiBold', sans-serif;
+		font-family: @font-semibold;
 		font-size: 32px;
 		line-height: 38px;
 		letter-spacing: 0;
@@ -268,12 +263,11 @@ body {
 		padding: 50px 60px;
 		flex-direction: column;
 		justify-content: space-between;
-		//width: 687px;
 		height: 360px;
 		background: #FFFFFF;
 		border-radius: 15px;
 
-		font-family: 'Akrobat SemiBold', sans-serif;
+		font-family: @font-semibold;
 		font-size: 34px;
 		line-height: 28px;
 		letter-spacing: 0.03em;
@@ -281,7 +275,7 @@ body {
 		z-index: 10;
 		position: relative;
 		.right-text {
-			font-family: 'Akrobat ExtraBold', sans-serif;
+			font-family: @font-extrabold;
 			color: @btn-color;
 			line-height: 34px;
 			&.fs-85 {
@@ -310,8 +304,6 @@ body {
 	}
 
 	&__picture{
-		//position: absolute;
-		//left: -100px;
 		position: relative;
 		left: 0;
 		@media(max-width: 1400px){
@@ -326,8 +318,6 @@ body {
 
 	&__first-block {
 		position: absolute;
-		//width: 480px;
-		//height: 360px;
 		width: 100%;
 		height: 100%;
 		padding: 0 0px;
@@ -354,8 +344,6 @@ body {
 		width: 223px;
 		height: 223px;
 		left: 265px;
-		//bottom: -130px;
-		//top: 255px;
 		top: 215px;
 		z-index: 6;
 	}
@@ -422,7 +410,6 @@ body {
 }
 
 .navbar-collapse.collapse.show .navbar-list-1, .navbar-list-2{
-
 	@media(max-width: 992px){
 		a{
 			border-bottom: 1px solid transparent;
@@ -432,7 +419,7 @@ body {
 		.btn-open-door, .btn-map{
 			color: #1E1E1E !important;
 			border: none;
-			font-family: 'Akrobat Regular', sans-serif;
+			font-family: @font-regular;
 			font-size: 30px !important;
 			line-height: 45px !important;
 			padding-left: 0 !important;
@@ -485,12 +472,6 @@ body {
 		max-width: calc(100% - 60px);
 	}
 
-	.ellipse1{
-		right: -100px;
-	}
-	.ellipse2{
-		right: -300px;
-	}
 	.navbar{
 		padding-left: 15px;
 		padding-right: 15px;
@@ -571,7 +552,7 @@ body {
 			}
 			.navbar-list-1{
 				a{
-					font-family: 'Akrobat Regular', sans-serif;
+					font-family: @font-regular;
 					font-size: 30px;
 					line-height: 45px;
 					color: #1E1E1E !important;
@@ -587,7 +568,7 @@ body {
 					font-size: 30px;
 					line-height: 45px;
 					color: #1E1E1E !important;
-					font-family: 'Akrobat Regular', sans-serif;
+					font-family: @font-regular;
 					font-style: normal;
 					font-weight: 600;
 					background-color: transparent;
@@ -620,7 +601,7 @@ body {
 
 .section-title{
 	margin-bottom: 17px;
-	font-family: 'Akrobat Bold', sans-serif;
+	font-family: @font-bold;
 	font-style: normal;
 	font-size: 56px;
 	line-height: 48px;
@@ -632,7 +613,7 @@ body {
 
 .section-subtitle{
 	margin-bottom: 30px;
-	font-family: 'Akrobat SemiBold', sans-serif;
+	font-family: @font-semibold;
 	font-style: normal;
 	font-size: 36px;
 	line-height: 47px;
@@ -737,8 +718,6 @@ body {
 			}
 		}
 	}
-
-
 }
 
 .about{
@@ -765,7 +744,7 @@ body {
 		position: relative;
 	}
 	.section-subtitle{
-		font-family: 'Akrobat SemiBold', sans-serif;
+		font-family: @font-semibold;
 		font-size: 24px;
 		line-height: 28px;
 		text-align: center;
@@ -870,10 +849,10 @@ body {
 			width: 110px;
 			height: 110px;
 			border-radius: 60px;
-			//margin-bottom: 20px;
+			background-color: @menu-color-active;
 		}
 		&__text{
-			font-family: 'Akrobat ExtraBold';
+			font-family: @font-extrabold;
 			font-size: 32px;
 			line-height: 32px;
 			text-align: center;
@@ -883,23 +862,13 @@ body {
 			text-transform: uppercase;
 		}
 		&__subtext{
-			font-family: 'Akrobat SemiBold';
+			font-family: @font-semibold;
 			font-size: 24px;
 			line-height: 29px;
 			text-align: center;
 			letter-spacing: 0;
 			color: @menu-color-active;
 			opacity: 0.9;
-		}
-
-		&.red{
-			background-color: @menu-color-active;
-		}
-		&.orange{
-			background-color: @menu-color-active;
-		}
-		&.cherry{
-			background-color: @menu-color-active;
 		}
 
 		&.icon-1{
@@ -964,7 +933,7 @@ body {
 	}
 	.section-subtitle{
 		margin-top: 15px;
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		font-size: 32px;
 		letter-spacing: 0;
 	}
@@ -977,7 +946,7 @@ body {
 		background: @btn-color;
 		width: 382px;
 		height: 70px;
-		font-family: 'Akrobat ExtraBold';
+		font-family: @font-extrabold;
 		font-style: normal;
 		font-size: 27px;
 		line-height: 28px;
@@ -1015,7 +984,7 @@ body {
 				bottom: 25px;
 				left: 32px;
 				.event-text{
-					font-family: 'Akrobat Regular';
+					font-family: @font-regular;
 					font-style: normal;
 					font-size: 22px;
 					line-height: 24px;
@@ -1023,7 +992,7 @@ body {
 					color: #FFFFFF;
 					text-transform: uppercase;
 					&__bold{
-						font-family: 'Akrobat ExtraBold';
+						font-family: @font-extrabold;
 					}
 				}
 			}
@@ -1062,7 +1031,7 @@ body {
 	}
 
 	.section-title{
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		font-size: 68px;
 		text-align: left;
 		display: inline-block;
@@ -1098,7 +1067,6 @@ body {
 		transition-duration: 0.5s;
 		img, video{
 			border: 1px solid transparent;
-			//border-radius: 50px;
 			border-radius: 1rem;
 			overflow: hidden;
 		}
@@ -1165,14 +1133,6 @@ body {
 		margin-right: 18px;
 	}
 
-	.footer-block__social{
-		img {
-			//border: 1px solid @btn-color;
-			//border-radius: 100px;
-			//background-color: #fff;
-		}
-	}
-
 	.footer-block__search{
 		padding-top: 30px;
 		.footer-block__search-group{
@@ -1181,14 +1141,14 @@ body {
 			border-radius: 60px;
 			border: 1px solid #fff;
 			padding: 4px 4px 4px 24px;
-			font-family: 'Akrobat Regular', sans-serif;
+			font-family: @font-regular;
 			font-size: 18px;
 			input{
 				width: 100%;
 				padding: 24px 0;
 				border: 1px solid #fff;
 				border-radius: 10px;
-				font-family: 'Akrobat Regular', sans-serif;
+				font-family: @font-regular;
 				font-size: 18px;
 				outline: none;
 				color: #B3B3B3;
@@ -1295,7 +1255,7 @@ body {
 		border-radius: 24px;
 		border: 1px solid #fff;
 		padding: 4px 4px 4px 24px;
-		font-family: 'Akrobat Regular', sans-serif;
+		font-family: @font-regular;
 		font-size: 18px;
 		margin: 10px 0;
 		input{
@@ -1307,7 +1267,7 @@ body {
 			padding: 5px 0;
 			border: 1px solid #fff;
 			border-radius: 10px;
-			font-family: 'Akrobat Regular', sans-serif;
+			font-family: @font-regular;
 			outline: none;
 			color: #B3B3B3;
 			opacity: 0.7;
@@ -1399,7 +1359,7 @@ body {
 	.top{
 		margin-top: 0;
 		.title{
-			font-family: 'Akrobat Regular';
+			font-family: @font-regular;
 			width: 90%;
 			font-size: 57px;
 		}
@@ -1523,7 +1483,7 @@ body {
 	.top{
 		margin-top: 0;
 		.title{
-			font-family: 'Akrobat Regular';
+			font-family: @font-regular;
 			line-height: 62px;
 		}
 
@@ -1684,7 +1644,6 @@ body {
 			background-position: center center;
 			position: absolute !important;
 			z-index: 10;
-			//left: 45%;
 			top: -35px;
 			&:hover{
 				cursor: pointer;
@@ -1710,7 +1669,7 @@ body {
 	margin: 15px 0;
 
 	.title {
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		font-size: 44px; //60px;
 		line-height: 56px; //70px;
 		letter-spacing: -0.02em;
@@ -1733,7 +1692,7 @@ body {
 	}
 
 	.subtitle {
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		font-size: 37px;
 		line-height: 70px;
 		letter-spacing: -0.02em;
@@ -1742,7 +1701,7 @@ body {
 	}
 
 	.dod-date {
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		font-size: 51px;
 		line-height: 66px;
 		letter-spacing: -0.02em;
@@ -1750,7 +1709,7 @@ body {
 	}
 
 	button {
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		letter-spacing: 0.02em;
 		text-decoration: none;
 		min-height: 54px;
@@ -1778,7 +1737,7 @@ body {
 
 .page-block3 {
 	margin: 20px 0;
-	font-family: 'Akrobat Bold', sans-serif;
+	font-family: @font-bold;
 	font-size: 25px;
 
 	.pseudo-button {
@@ -1809,7 +1768,7 @@ body {
 	padding-bottom: 45px;
 	.section-title{
 		margin-bottom: 50px;
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		font-size: 52px;
 		line-height: 48px;
 		text-align: center;
@@ -1829,7 +1788,7 @@ body {
 			margin-bottom: 20px;
 		}
 		&__text{
-			font-family: 'Akrobat SemiBold';
+			font-family: @font-semibold;
 			font-style: normal;
 			font-size: 25px;
 			line-height: 32px;
@@ -1879,7 +1838,7 @@ body {
 
 .page-block6 {
 	margin: 100px 0;
-	font-family: 'Akrobat SemiBold', sans-serif;
+	font-family: @font-semibold;
 	font-size: 35px;
 
 	.section-title{
@@ -1889,7 +1848,7 @@ body {
 	}
 
 	.subtitle {
-		font-family: 'Akrobat SemiBold', sans-serif;
+		font-family: @font-semibold;
 		font-size: 31px;
 		line-height: 37px;
 		color: #000000;
@@ -1915,7 +1874,7 @@ body {
 	}
 
 	button {
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		letter-spacing: 0.02em;
 		text-decoration: none;
 		min-height: 54px;
@@ -2004,7 +1963,7 @@ body {
 			.filter-option {
 				padding-left: 30px;
 				.filter-option-inner-inner {
-					font-family: 'Akrobat SemiBold';
+					font-family: @font-semibold;
 					font-size: 22px;
 					//color: #fff;
 					//background-color:  @btn-color;
@@ -2013,7 +1972,7 @@ body {
 			.dropdown-menu.inner {
 				li {
 					a {
-						font-family: 'Akrobat SemiBold';
+						font-family: @font-semibold;
 						font-style: normal;
 						font-size: 22px;
 						font-weight: 600;
@@ -2023,14 +1982,14 @@ body {
 						&:hover {
 							background: rgba(247, 82, 15, 0.1);
 							color: @btn-color;
-							font-family: 'Akrobat SemiBold';
+							font-family: @font-semibold;
 						}
 					}
 
 					.selected.active {
 						background: rgba(247, 82, 15, 0.1);
 						color: @btn-color;
-						font-family: 'Akrobat SemiBold';
+						font-family: @font-semibold;
 					}
 				}
 			}
@@ -2056,7 +2015,7 @@ body {
 			}
 
 			&__title{
-				font-family: 'Akrobat ExtraBold';
+				font-family: @font-extrabold;
 				font-style: normal;
 				font-size: 22px;
 				font-weight: 700;
@@ -2065,7 +2024,7 @@ body {
 				margin-bottom: 5px;
 			}
 			&__description{
-				font-family: 'Akrobat Regular';
+				font-family: @font-regular;
 				font-style: normal;
 				font-weight: 500;
 				font-size: 22px;
@@ -2084,7 +2043,7 @@ body {
 
 		&__header{
 			padding: 20px 30px;
-			font-family: 'Akrobat Regular';
+			font-family: @font-regular;
 			font-style: normal;
 			font-size: 22px;
 			line-height: 140%;
@@ -2093,7 +2052,7 @@ body {
 				margin-right: 40px;
 			}
 			&-address{
-				font-family: 'Akrobat Regular';
+				font-family: @font-regular;
 				font-style: normal;
 				font-size: 18px;
 				line-height: 140%;
@@ -2139,7 +2098,7 @@ body {
 			border-bottom: 1px solid #EEE;
 			padding: 20px 30px;
 			.title{
-				font-family: 'Akrobat SemiBold';
+				font-family: @font-semibold;
 				font-style: normal;
 				font-size: 18px;
 				line-height: 140%;
@@ -2157,7 +2116,7 @@ body {
 					}
 				}
 				.date-block{
-					font-family: 'Akrobat Bold', sans-serif;
+					font-family: @font-bold;
 					font-style: normal;
 					font-weight: 700;
 					font-size: 22px;
@@ -2165,7 +2124,7 @@ body {
 					color: #FBB193;
 				}
 				.time-block{
-					font-family: 'Akrobat Regular', sans-serif;
+					font-family: @font-regular;
 					font-style: normal;
 					font-weight: 500;
 					font-size: 16px;
@@ -2177,7 +2136,7 @@ body {
 		.speciality-list{
 			padding: 20px 30px;
 			li{
-				font-family: 'Akrobat SemiBold';
+				font-family: @font-semibold;
 				font-style: normal;
 				font-size: 18px;
 				line-height: 140%;
@@ -2188,7 +2147,7 @@ body {
 
 		.more-btn{
 			width: 100%;
-			font-family: 'Akrobat SemiBold';
+			font-family: @font-semibold;
 			font-style: normal;
 			font-size: 16px;
 			line-height: 140%;
@@ -2217,7 +2176,7 @@ body {
 }
 
 h2{
-	font-family: 'Akrobat ExtraBold';
+	font-family: @font-extrabold;
 	font-style: normal;
 	font-size: 64px;
 	font-weight: 800;
@@ -2228,7 +2187,7 @@ h2{
 }
 
 h3{
-	font-family: 'Akrobat ExtraBold';
+	font-family: @font-extrabold;
 	font-style: normal;
 	font-size: 44px;
 	line-height: 130%;
@@ -2269,7 +2228,7 @@ h3{
 		border-radius: 16px !important;
 		background-color: @btn-color;
 		.title{
-			font-family: 'Akrobat ExtraBold';
+			font-family: @font-extrabold;
 			font-style: normal;
 			font-size: 64px;
 			line-height: 110%;
@@ -2277,7 +2236,7 @@ h3{
 			color: #FFFFFF;
 		}
 		.subtitle{
-			font-family: 'Akrobat SemiBold';
+			font-family: @font-semibold;
 			font-style: normal;
 			font-size: 22px;
 			line-height: 120%;
@@ -2319,7 +2278,7 @@ h3{
 		border: 1px solid #EEEEEE !important;
 		border-radius: 16px !important;
 		.title{
-			font-family: 'Akrobat SemiBold';
+			font-family: @font-semibold;
 			font-style: normal;
 			font-size: 44px;
 			line-height: 130%;
@@ -2327,7 +2286,7 @@ h3{
 			margin-bottom: 5px;
 		}
 		.sub-title{
-			font-family: 'Akrobat Regular';
+			font-family: @font-regular;
 			font-style: normal;
 			font-size: 22px;
 			line-height: 140%;
@@ -2346,7 +2305,7 @@ h3{
 
 			label{
 				width: 100%;
-				font-family: 'Akrobat SemiBold';
+				font-family: @font-semibold;
 				font-style: normal;
 				font-size: 18px;
 				line-height: 140%;
@@ -2358,7 +2317,7 @@ h3{
 			}
 			input{
 				width: 100%;
-				font-family: 'Akrobat SemiBold';
+				font-family: @font-semibold;
 				font-style: normal;
 				font-size: 22px;
 				line-height: 140%;
@@ -2368,7 +2327,7 @@ h3{
 				outline: none;
 			}
 			input::placeholder{
-				font-family: 'Akrobat SemiBold';
+				font-family: @font-semibold;
 				font-style: normal;
 				font-size: 22px;
 				line-height: 140%;
@@ -2384,7 +2343,7 @@ h3{
 					border-radius: 16px;
 					outline: none !important;
 					.filter-option{
-						font-family: 'Akrobat SemiBold';
+						font-family: @font-semibold;
 						font-style: normal;
 						font-size: 22px;
 						line-height: 140%;
@@ -2401,7 +2360,7 @@ h3{
 					border-color: #EEEEEE;
 					&.inner {
 						li a {
-							font-family: 'Akrobat SemiBold';
+							font-family: @font-semibold;
 							font-style: normal;
 							font-size: 22px;
 							line-height: 140%;
@@ -2451,7 +2410,7 @@ h3{
 				-moz-user-select: none;
 				-ms-user-select: none;
 				user-select: none;
-				font-family: 'Akrobat Regular';
+				font-family: @font-regular;
 				font-style: normal;
 				font-size: 18px;
 				line-height: 140%;
@@ -2486,7 +2445,7 @@ h3{
 
 		.button{
 			margin-top: 55px;
-			font-family: 'Akrobat SemiBold';
+			font-family: @font-semibold;
 			font-style: normal;
 			font-size: 16px;
 			line-height: 150%;
@@ -2516,7 +2475,7 @@ h3{
 	.btn-address {
 		color: @text-color;
 		font-size: 22px;
-		font-family: 'Akrobat Regular';
+		font-family: @font-regular;
 		padding: 14px 30px 19px;
 		border-radius: 16px;
 		border: 1px solid #DDDDDD;
@@ -2548,7 +2507,7 @@ h3{
 		//border-radius: 8px;
 		color: #244B98;
 		font-size: 28px;
-		font-family: 'Akrobat ExtraBold';
+		font-family: @font-extrabold;
 		text-transform: uppercase;
 		padding: 3px;
 		margin-bottom: 20px;
@@ -2565,7 +2524,7 @@ h3{
 		p{
 			font-size: 16px;
 			color: #fff;
-			font-family: 'Akrobat SemiBold';
+			font-family: @font-semibold;
 		}
 	}
 
@@ -2582,7 +2541,7 @@ h3{
 	.more-btn{
 		display: inline-block;
 		position: relative;
-		font-family: 'Akrobat SemiBold';
+		font-family: @font-semibold;
 		font-style: normal;
 		font-size: 16px;
 		line-height: 140%;
@@ -2689,7 +2648,7 @@ h3{
 			margin-left: auto;
 			margin-right: auto;
 			color: #fff;
-			font-family: 'Akrobat SemiBold';
+			font-family: @font-semibold;
 
 			@media(max-width: 992px){
 				font-size: 15px;
@@ -2747,7 +2706,7 @@ h3{
 		span{
 			color: @text-color;
 			margin-right: 25px;
-			font-family: 'Akrobat Bold';
+			font-family: @font-bold;
 			width: 54px;
 			display: inline-block;
 			@media(max-width: 768px){
@@ -2771,13 +2730,13 @@ h3{
 			h4{
 				font-size: 22px;
 				color: @btn-color;
-				font-family: 'Akrobat SemiBold';
+				font-family: @font-semibold;
 				line-height: 140%;
 			}
 
 			p{
 				font-size: 22px;
-				font-family: 'Akrobat Regular';
+				font-family: @font-regular;
 			}
 		}
 	}
@@ -2816,13 +2775,13 @@ h3{
 	background-size: contain;
 	padding: 30px 50px;
 	p{
-		font-family: 'Akrobat Regular';
+		font-family: @font-regular;
 		font-size: 44px;
 		line-height: 110%;
 		color: #FCFDFF;
 	}
 	.small{
-		font-family: 'Akrobat Regular';
+		font-family: @font-regular;
 		font-size: 18px;
 		line-height: 110%;
 		color: #FFFFFF;
@@ -2835,7 +2794,7 @@ h3{
 	}
 	p {
 		margin-top: 30px;
-		font-family: 'Akrobat Regular';
+		font-family: @font-regular;
 		font-size: 22px;
 		line-height: 140%;
 		color: #000000;
@@ -2876,9 +2835,6 @@ h3{
 	}
 }
 @media(max-width:768px){
-	//h2{
-	//	font-size: 25px;
-	//}
 	.rostex-banner{
 		padding: 0;
 		background-image: none;
@@ -2908,7 +2864,7 @@ h3{
 
 .section{
 	h2, .bold{
-		font-family: 'Akrobat Bold';
+		font-family: @font-bold;
 	}
 	margin-top: 110px;
 	.fs-22{
@@ -2951,18 +2907,13 @@ h3{
 	width: 300px !important;
 	height: 100%;
 	position: relative;
-	//display: flex !important;
-	//justify-content: center !important;
-	//margin-left: 0px;
 	#ca{
 		width: 100%;
 		height: 100%;
 
 		.days, .week{
 			li{
-				//width: 44px !important;
 				height: auto !important;
-				//line-height: 44px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
@@ -3035,7 +2986,7 @@ h3{
 	right: 30px;
 	background: #FFFFFF;
 	border-radius: 8px;
-	font-family: 'Akrobat SemiBold';
+	font-family: @font-semibold;
 	font-size: 16px;
 	color: @btn-color;
 	&:hover{
@@ -3064,14 +3015,14 @@ h3{
 	padding: 20px 30px;
 
 	p{
-		font-family: 'Akrobat SemiBold';
+		font-family: @font-semibold;
 		font-size: 20px;
 		line-height: 140%;
 		color: #333333;
 	}
 
 	li{
-		font-family: 'Akrobat Regular';
+		font-family: @font-regular;
 		font-size: 18px;
 		margin-bottom: 10px;
 	}
@@ -3125,27 +3076,27 @@ h3{
 	margin-bottom: 30px;
 	padding: 20px 30px 30px 30px;
 
-	font-family: 'Akrobat SemiBold', sans-serif;
+	font-family: @font-semibold;
 	font-size: 22px;
 	font-weight: 600;
 	line-height: 140%;
 
 	a{
-		font-family: 'Akrobat SemiBold', sans-serif;
+		font-family: @font-semibold;
 		font-weight: 600;
 		color: #D64A28;
 		text-decoration: none;
 	}
 
 	strong{
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: @font-extrabold;
 		font-size: 24px;
 		font-weight: 800;
 	}
 }
 
 #college_select{
-	font-family: 'Akrobat ExtraBold', sans-serif;
+	font-family: @font-extrabold;
 	font-size: 24px;
 	font-weight: 800;
 	line-height: 140%;
@@ -3160,7 +3111,7 @@ h3{
 		border: 1px solid rgba(255, 255, 255, 0.45);
 		border-radius: 16px;
 		padding: 14px 30px 19px 30px;
-		font-family: 'Akrobat Regular';
+		font-family: @font-regular;
 		font-size: 22px;
 		font-weight: 500;
 		line-height: 140%;
