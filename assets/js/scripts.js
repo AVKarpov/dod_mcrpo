@@ -85,10 +85,10 @@ $(document).ready(function(){
 				items:2
 			},
 			600:{
-				items:3
+				items:4
 			},
 			1000:{
-				items: 10
+				items: 8
 			}
 		}
 	});

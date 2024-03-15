@@ -661,6 +661,9 @@ body {
 			text-align: center;
 			justify-content: center;
 			display: flex;
+			/* corrects margin between slides */
+			//	width: 96%;
+			//	margin: 0 auto;
 		}
 		img{
 			width: 120px;
@@ -749,6 +752,9 @@ body {
 	background-size: contain;
 	position: relative;
 	padding-top: 70px;
+	@media (max-width: 991px) {
+		padding-top: 0;
+	}
 	padding-bottom: 150px;
 	.section-title{
 		font-size: 68px;
@@ -2007,6 +2013,9 @@ body {
 /*Otrasli*/
 .otr{
 	padding-top: 35px;
+	@media (max-width: 991px){
+		padding-top: 0;
+	}
 
 	.filter-block{
 		padding-bottom: 55px;
@@ -2036,7 +2045,7 @@ body {
 	.select-block {
 		margin-bottom: 54px;
 		position: relative;
-		z-index: 2;
+		z-index: 4;
 		.bootstrap-select.show{
 			.dropdown-toggle::after{
 				transform: rotate(180deg) !important;
@@ -2572,7 +2581,10 @@ h3{
 		padding: 14px 30px 19px;
 		border-radius: 16px;
 		border: 1px solid #DDDDDD;
-		margin-right: 30px;
+		margin: 0 30px 30px 0;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
 
 		&.active, &:hover{
 			background: #F7520F;
@@ -2586,6 +2598,9 @@ h3{
 .banner-block{
 	position: relative;
 	margin-bottom: 100px;
+	@media (max-width: 991px) {
+		margin-bottom: 50px;
+	}
 	background: linear-gradient(90.00deg, rgb(215, 73, 36) 25.159%,rgb(232, 151, 130) 100.002%);
 	border-radius: 16px;
 	padding: 30px;
@@ -2912,9 +2927,9 @@ h3{
 	}
 }
 @media(max-width:768px){
-	h2{
-		font-size: 25px;
-	}
+	//h2{
+	//	font-size: 25px;
+	//}
 	.rostex-banner{
 		padding: 0;
 		background-image: none;
@@ -3071,7 +3086,7 @@ h3{
 		background-color: #F7520F;
 		color: #fff;
 	}
-	@media (max-width:992px) {
+	@media (max-width:991px) {
 		position: relative;
 		bottom: 0;
 		right: 0;
