@@ -155,9 +155,9 @@ body {
 	}
 
     .girl-background {
-	    left: -23%;
+	    left: -13%;
 	    top: -10%;
-        position: absolute;
+        position: relative;
         z-index: 5;
         width: 900px;
         height: 900px;
@@ -530,7 +530,7 @@ body {
 				width: 30px;
 				height: 3px;
 				margin-bottom: 7px;
-				background-color: #F7520F;
+				background-color: @btn-color;
 				transition: all 0.2s;
 				border-radius: 60px;
 				border: 1px solid transparent;
@@ -577,7 +577,7 @@ body {
 					color: #1E1E1E !important;
 					margin-bottom: 25px;
 					&:hover, &.active{
-						color: #F7520F !important;
+						color: @btn-color !important;
 					}
 				}
 			}
@@ -598,7 +598,7 @@ body {
 					min-height: 45px;
 					margin-bottom: 25px;
 					&:hover, &.active{
-						color: #F7520F !important;
+						color: @btn-color !important;
 					}
 				}
 			}
@@ -661,9 +661,6 @@ body {
 			text-align: center;
 			justify-content: center;
 			display: flex;
-			/* corrects margin between slides */
-			//	width: 96%;
-			//	margin: 0 auto;
 		}
 		img{
 			width: 120px;
@@ -1040,6 +1037,11 @@ body {
 			height: 36px;
 		}
 	}
+	@media(max-width: 992px){
+		.zigzag{
+			display: none;
+		}
+	}
 }
 
 .multimedia{
@@ -1165,7 +1167,7 @@ body {
 
 	.footer-block__social{
 		img {
-			//border: 1px solid #F7520F;
+			//border: 1px solid @btn-color;
 			//border-radius: 100px;
 			//background-color: #fff;
 		}
@@ -1247,7 +1249,7 @@ body {
     font-size: 30px;
     line-height: 41px;
     letter-spacing: 0.035em;
-    color: #F7520F;
+    color: @btn-color;
 }
 
 .top-slider {
@@ -1267,7 +1269,7 @@ body {
 }
 
 .college-menu {
-	background-color: #F7520F;
+	background-color: @btn-color;
 	font-family: "Akrobat Bold", sans-serif;
 	font-size: 24px;
 	line-height: 42px;
@@ -1375,7 +1377,7 @@ body {
 		button {
 			min-width: 223px;
 			color: white;
-			background: #F7520F;
+			background: @btn-color;
 			padding: 16px 0;
 			border: 5px solid #FF5800;
 			border-radius: 10px;
@@ -1518,49 +1520,11 @@ body {
 		width: 100% !important;
 	}
 
-	.ellipse1 {
-		right: -350px;
-	}
-	.ellipse2 {
-		right: -430px;
-	}
-
 	.top{
 		margin-top: 0;
 		.title{
 			font-family: 'Akrobat Regular';
-		}
-
-		.sticker{
-			position: relative !important;
-			background: transparent;
-			box-shadow: none;
-			width: 100%;
-			height: auto;
-			left: 0;
-			font-size: 50px;
-			margin-top: 60px;
-			.smile-image{
-				scale: 1;
-				width: 30%;
-				height: 60%;
-				left: 30px;
-				top: -10px;
-				background-size: contain;
-			}
-			.smile-image-text-1{
-				font-size: 60px !important;
-				margin-left: 0;
-			}
-			.smile-image-text-2{
-				font-size: 23pt !important;
-				line-height: 1.3;
-				opacity: 0.8;
-				color: #1E1E1E;
-				text-align: center;
-				margin-left: 0;
-				margin-top: 24px;
-			}
+			line-height: 62px;
 		}
 
 		.subtitle{
@@ -1584,26 +1548,10 @@ body {
 		margin-top: 0 !important;
 	}
 
-	.girl-block{
-		position: absolute !important;
-		top: 20px;
-		right: 0;
-		z-index: 2;
-		justify-content: flex-end !important;
-		.girl-group{
-			scale: 1;
-			position: absolute;
-			right: 0;
-			top: -30px;
-			.girl-background{
-				width: 100%;
-				height: 100%;
-				top: 0;
-			}
-			img{
-				width: 100%;
-			}
-		}
+	.girl-group .girl-background{
+		left: -100%;
+		top: -20%;
+		position: absolute;
 	}
 
 	.arrow{
@@ -1677,16 +1625,7 @@ body {
 			font-size: 46px;
 		}
 	}
-	.top .sticker .smile-image-text-2{
-		font-size: 19px !important;
-	}
 
-	.open-doors .background-rectangle .right-text.fs-85{
-		font-size: 50px !important;
-	}
-	.open-doors .background-rectangle .fs-31{
-		font-size: 22px !important;
-	}
 	.about .section-title{
 		word-break: break-word;
 	}
@@ -1807,7 +1746,7 @@ body {
 		font-size: 51px;
 		line-height: 66px;
 		letter-spacing: -0.02em;
-		color: #F7520F;
+		color: @btn-color;
 	}
 
 	button {
@@ -1817,7 +1756,7 @@ body {
 		min-height: 54px;
 		width: 100%;
 		color: white;
-		background: #F7520F;
+		background: @btn-color;
 		border: 1px solid #FFFFFF;
 		font-size: 27px;
 		line-height: 28px;
@@ -1982,7 +1921,7 @@ body {
 		min-height: 54px;
 		width: 100%;
 		color: white;
-		background: #F7520F;
+		background: @btn-color;
 		border: 1px solid #FFFFFF;
 		font-size: 27px;
 		line-height: 28px;
@@ -2035,7 +1974,7 @@ body {
 
 			&:hover{
 				cursor: pointer;
-				background-color: #F7520F;
+				background-color: @btn-color;
 				border: 1px solid transparent;
 				color: #FFF;
 			}
@@ -2068,7 +2007,7 @@ body {
 					font-family: 'Akrobat SemiBold';
 					font-size: 22px;
 					//color: #fff;
-					//background-color:  #F7520F;
+					//background-color:  @btn-color;
 				}
 			}
 			.dropdown-menu.inner {
@@ -2083,14 +2022,14 @@ body {
 
 						&:hover {
 							background: rgba(247, 82, 15, 0.1);
-							color: #F7520F;
+							color: @btn-color;
 							font-family: 'Akrobat SemiBold';
 						}
 					}
 
 					.selected.active {
 						background: rgba(247, 82, 15, 0.1);
-						color: #F7520F;
+						color: @btn-color;
 						font-family: 'Akrobat SemiBold';
 					}
 				}
@@ -2112,7 +2051,7 @@ body {
 				cursor: pointer;
 				border: 1px solid #FBB193;
 				.place-item__title, .place-item__description {
-					color: #F7520F;
+					color: @btn-color;
 				}
 			}
 
@@ -2214,7 +2153,7 @@ body {
 				&.active, &:hover{
 					cursor: pointer;
 					.date-block{
-						color: #F7520F;
+						color: @btn-color;
 					}
 				}
 				.date-block{
@@ -2253,14 +2192,14 @@ body {
 			font-style: normal;
 			font-size: 16px;
 			line-height: 140%;
-			color: #F7520F;
+			color: @btn-color;
 			padding: 15px 0;
 			margin-top: 45px;
 			background-color: #D64A281A;
 			border: 1px solid #D64A281A;
 			border-radius: 0 0 16px 16px;
 			&:hover{
-				background-color: #F7520F;
+				background-color: @btn-color;
 				color: #fff;
 			}
 		}
@@ -2326,9 +2265,9 @@ h3{
 	}
 	.modal-content {
 		padding: 30px 50px;
-		border: 1px solid #F7520F !important;
+		border: 1px solid @btn-color !important;
 		border-radius: 16px !important;
-		background-color: #F7520F;
+		background-color: @btn-color;
 		.title{
 			font-family: 'Akrobat ExtraBold';
 			font-style: normal;
@@ -2471,7 +2410,7 @@ h3{
 						}
 
 						li.selected.active, li:hover {
-							background-color: #F7520F;
+							background-color: @btn-color;
 
 							.text {
 								color: #FFF !important;
@@ -2518,7 +2457,7 @@ h3{
 				line-height: 140%;
 				color: #666666 !important;
 				a{
-					color: #F7520F;
+					color: @btn-color;
 					text-decoration: none
 				}
 				input[type="checkbox"] {
@@ -2551,8 +2490,8 @@ h3{
 			font-style: normal;
 			font-size: 16px;
 			line-height: 150%;
-			color: #F7520F;
-			border: 1px solid #F7520F;
+			color: @btn-color;
+			border: 1px solid @btn-color;
 			border-radius: 16px;
 			padding: 15px 30px;
 			width: 100%;
@@ -2560,8 +2499,8 @@ h3{
 
 			&:hover{
 				color: #ffffff;
-				background-color: #F7520F;
-				border: 1px solid #F7520F;
+				background-color: @btn-color;
+				border: 1px solid @btn-color;
 			}
 		}
 	}
@@ -2587,7 +2526,7 @@ h3{
 		}
 
 		&.active, &:hover{
-			background: #F7520F;
+			background: @btn-color;
 			color: #fff;
 		}
 	}
@@ -2596,28 +2535,29 @@ h3{
 }
 
 .banner-block{
-	position: relative;
 	margin-bottom: 100px;
 	@media (max-width: 991px) {
 		margin-bottom: 50px;
 	}
 	background: linear-gradient(90.00deg, rgb(215, 73, 36) 25.159%,rgb(232, 151, 130) 100.002%);
+	background: #244B98;
 	border-radius: 16px;
 	padding: 30px;
-	z-index: 3;
 
 	&__header{
-		color: #D64A28;
+		//border-radius: 8px;
+		color: #244B98;
 		font-size: 28px;
-		font-family: 'Akrobat ExtraBold', sans-serif;
+		font-family: 'Akrobat ExtraBold';
 		text-transform: uppercase;
 		padding: 3px;
 		margin-bottom: 20px;
 
+		display: inline;
 		background-color: #fff;
-		border-radius: 16px;
-		line-height: 140%;
-		padding-left: 10px;
+		line-height: 58px;
+		outline: white solid 3px;
+		-moz-outline: white solid 3px;
 	}
 	&__text{
 		margin-top: 20px;
@@ -2646,7 +2586,7 @@ h3{
 		font-style: normal;
 		font-size: 16px;
 		line-height: 140%;
-		color: #F7520F;
+		color: @btn-color;
 		margin-top: 15px;
 		background-color: #fff;
 		border: transparent;
@@ -2788,15 +2728,15 @@ h3{
 				text-decoration: none;
 				color: #1E1E1E;
 				&:hover{
-					color: #F7520F !important;
+					color: @btn-color !important;
 				}
 			}
 			&:hover{
-				color: #F7520F !important;
+				color: @btn-color !important;
 			}
 		}
 		span{
-			color: #F7520F;
+			color: @btn-color;
 			margin-right: 25px;
 			font-family: 'Akrobat Bold';
 			width: 54px;
@@ -2821,7 +2761,7 @@ h3{
 
 			h4{
 				font-size: 22px;
-				color: #F7520F;
+				color: @btn-color;
 				font-family: 'Akrobat SemiBold';
 				line-height: 140%;
 			}
@@ -3022,7 +2962,7 @@ h3{
 		height: auto !important;
 	}
 	.now{
-		background-color: #F7520F !important;
+		background-color: @btn-color !important;
 		color: #fff !important;
 	}
 	font-size: 1em;
@@ -3077,13 +3017,13 @@ h3{
 	position: absolute;
 	bottom: 15px;
 	right: 30px;
-	background: #0DCAF0;
+	background: #FFFFFF;
 	border-radius: 8px;
 	font-family: 'Akrobat SemiBold';
 	font-size: 16px;
-	color: #FFFFFF;
+	color: @btn-color;
 	&:hover{
-		background-color: #F7520F;
+		background-color: @btn-color;
 		color: #fff;
 	}
 	@media (max-width:991px) {
@@ -3129,10 +3069,7 @@ h3{
 	position: absolute;
 	bottom: -30px;
 	z-index: 2;
-	height: 120%;
-	@media (max-width: 992px) {
-		display: none;
-	}
+	width: 80%;
 }
 
 /*
