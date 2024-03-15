@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>ДОД МЦРПО</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="assets/owl-carousel/assets/owl.theme.default.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css?11">
+
+</head>
+<body>
+<div class="wrapper inner-page">
+    <section class="header">
+        <div class="container header-block">
+            <div class="ellipse1"></div>
+            <div class="ellipse2"></div>
+            <div class="align-items-center">
+                <nav class="navbar navbar-expand-lg z-10 d-flex w-100">
+                    <div class="col-xl-3 col-lg-3 d-flex align-items-center justify-content-start">
+                        <a href="https://www.mos.ru/donm/"><img width="72px" src="assets/img/logo-mosobr.png" alt=""></a>
+                        <a href="https://mcrpo.ru/"><img width="160px" src="assets/img/logo-mcrpo.png" alt=""></a>
+                    </div>
+                    <button class="navbar-toggler collapsed position-relative" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="col-xl-8 col-lg-7 d-flex justify-content-evenly navbar-list-1 position-relative">
+                            <a href="/index.html">Главная</a>
+                            <a href="/otrasli.html">Отрасли</a>
+                            <a href="/professii.html">Профессии</a>
+                            <a href="/college.html">Колледжи</a>
+                            <a href="/college.html">Поступление</a>
+
+                            <a href="/rostex.html" class="rostex-menu">Проект дуального обучения ГК «Ростех»</a>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 d-flex justify-content-evenly navbar-list-2">
+                            <!--                            <a href="/page.html" class="button btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</a>-->
+                            <a href="/map.html" class="button btn-map">КАРТА</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!--    <section class="header">-->
+<!--        <div class="container header-block">-->
+<!--            <div class="ellipse1"></div>-->
+<!--            <div class="ellipse2"></div>-->
+<!--            <div class="align-items-center">-->
+<!--                <nav class="navbar navbar-expand-lg z-3 d-flex w-100">-->
+<!--                    <div class="col-xl-3 col-lg-3 d-flex align-items-center justify-content-start">-->
+<!--                        <a href="https://www.mos.ru/donm/"><img src="assets/img/mosobr_logo.svg" alt=""></a>-->
+<!--                        <a href="https://mcrpo.ru/"><img src="assets/img/mcrpo_logo.svg" alt=""></a>-->
+<!--                    </div>-->
+<!--                    <button class="navbar-toggler collapsed position-relative" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                        <span class="icon-bar top-bar"></span>-->
+<!--                        <span class="icon-bar middle-bar"></span>-->
+<!--                        <span class="icon-bar bottom-bar"></span>-->
+<!--                    </button>-->
+
+<!--                    <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--                        <div class="col-xl-8 col-lg-7 d-flex justify-content-evenly navbar-list-1">-->
+<!--                            <a href="/index.html">ГЛАВНАЯ</a>-->
+<!--                            <a class="active" href="/otrasli.html">ОТРАСЛИ</a>-->
+<!--                            <a href="/professii.html">ПРОФЕССИИ</a>-->
+<!--                            <a href="/college.html" class="" >КОЛЛЕДЖИ</a>-->
+<!--                        </div>-->
+<!--                        <div class="col-xl-4 col-lg-5 d-flex justify-content-evenly navbar-list-2">-->
+<!--&lt;!&ndash;                            <a href="/page.html" class="button btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</a>&ndash;&gt;-->
+<!--                            <a href="/map.html" class="button btn-map">КАРТА</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </nav>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+    <!-- Large modal -->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-xl">
+            <div class="modal-content">
+                <div class="row m-0">
+                    <div class="col-4 college-menu">
+                        <div class="college-menu__title">Выберите колледж</div>
+                        <div class="college-menu__search-group position-relative">
+                            <button type="submit"></button>
+                            <div class="row align-items-center">
+                                <div class="col-11 px-0">
+                                    <input type="text" name="search" value="" placeholder="Поиск">
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>МГАК</li>
+                            <li>Колледж полиции</li>
+                            <li>Технологический колледж N° 21</li>
+                            <li>МГОК</li>
+                            <li>TK N° 22</li>
+                            <li>26 КАДР</li>
+                            <li>МОК ЗАПАД</li>
+                            <li>Юго-запад</li>
+                            <li style="border-bottom: none;">МГПУ</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 college-block">
+                        <div class="college-block__top" style="padding: 20px">
+                            <div class="college-block__top__date">23 марта 2023, 10:00</div>
+                            <div class="college-block__top__college-name">ГБПОУ ТК N°21 Вербная 4 стр.2</div>
+                        </div>
+                        <div class="college-block__center">
+                            - Архитектура <br>
+                            - Кровельщик <br>
+                            - Мастер сухого строительства <br>
+                            - Мастер общестроительных работ <br>
+                            - Мастер отделочных строительных работ <br>
+                            - Мастер жилищно-коммунального хозяйства <br>
+                            - Монтажник санитарно-технических, вентиляционных систем и оборудования <br>
+                            - Электромонтажник по сигнализации, централизации и блокировке <br>
+                            - Электромонтажник электрических сетей и электрооборудования <br>
+                            - Мастер столярно-плотничных, паркетных и стекольных работ <br>
+                            - Мастер отделочных строительных и декоративных работ <br>
+                            - Мастер по ремонту и обслуживанию инженерных систем жилищно-коммунального хозяйства <br>
+                        </div>
+                        <div class="college-block__bottom">
+                            <button type="button">Подробнее</button>
+                        </div>
+                    </div>
+
+                    <div class="col-4 college-block">
+                        <div class="college-block__top" style="padding: 20px">
+                            <div class="college-block__top__date">3 апреля 2023, 15:00</div>
+                            <div class="college-block__top__college-name">ГБПОУ ТК N°21 Вербная 4 стр.2</div>
+                        </div>
+                        <div class="college-block__center">
+                            - Архитектура <br>
+                            - Кровельщик <br>
+                            - Мастер сухого строительства <br>
+                            - Мастер общестроительных работ <br>
+                            - Мастер отделочных строительных работ <br>
+                            - Мастер жилищно-коммунального хозяйства <br>
+                            - Монтажник санитарно-технических, вентиляционных систем и оборудования <br>
+                            - Электромонтажник по сигнализации, централизации и блокировке <br>
+                            - Электромонтажник электрических сетей и электрооборудования <br>
+                            - Мастер столярно-плотничных, паркетных и стекольных работ <br>
+                            - Мастер отделочных строительных и декоративных работ <br>
+                            - Мастер по ремонту и обслуживанию инженерных систем жилищно-коммунального хозяйства <br>
+                        </div>
+                        <div class="college-block__bottom">
+                            <button type="button">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="otr">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Приемная кампания 2024</h2>
+                </div>
+                <div class="col-12">
+                    <img style="width: 100%" src="assets/img/city.png" alt="">
+                </div>
+            </div>
+
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active show" id="5773-tab" data-toggle="tab" data-target="#5773_" type="button" role="tab" aria-controls="5773" aria-selected="true">Как поступить?</button>
+                    <button class="nav-link" id="5774-tab" data-toggle="tab" data-target="#5774_" type="button" role="tab" aria-controls="5774" aria-selected="false">Поступление на бюджет</button>
+                    <button class="nav-link" id="5775-tab" data-toggle="tab" data-target="#5775_" type="button" role="tab" aria-controls="5775" aria-selected="false">Платная форма обучения</button>
+                    <button class="nav-link " id="5776-tab" data-toggle="tab" data-target="#5776_" type="button" role="tab" aria-controls="5776" aria-selected="true">Документы для зачисления</button>
+                    <button class="nav-link " id="5777-tab" data-toggle="tab" data-target="#5777_" type="button" role="tab" aria-controls="5777" aria-selected="true">Контакты приемных комиссий колледжей</button>
+                </div>
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade active show" id="5773_" role="tabpanel" aria-labelledby="kak-postupit-tab">
+                    <div class="tab-pane__inner-block">
+                        <p><strong>Поступай в колледж — получи современную и востребованную профессию со стабильным доходом!</strong></p>
+                        <p>Образовательные программы столичных колледжей разработаны под реальные потребности работодателей города. Более 70% занятий – это практика, которая проходит под руководством опытных наставников. А трудоустроиться студенты могут уже во время обучения.</p>
+                        <p>Выпускники московских колледжей — это квалифицированные, конкурентоспособные и востребованные профессионалы, способные решать практические задачи. Они с успехом работают во всех отраслях экономики в лидирующих компаниях и предприятиях, предлагающих стабильную работу, профессиональный рост и рыночную заработную плату.</p>
+                        <p>В этом году выпускники девятых и одиннадцатых классов могут выбрать одну из 150 востребованных специальностей и профессий, которые можно освоить в 46 колледжах Москвы.</p>
+                        <p>Поступление в колледж регламентируется приказом Министерства просвещения Российской Федерации от 2 сентября 2020 г. №457 «Об утверждении порядка приема на обучение по образовательным программам среднего профессионального образования», а также Правилами приема, устанавливаемые колледжем самостоятельно.</p>
+                    </div>
+                    <div class="tab-pane__inner-block">
+                        <p>Подать заявление на поступление можно онлайн или в приемной комиссии колледжа в период с 20 июня по 15 августа. В случае подачи заявления по специальностям (профессиям), требующим у поступающего определенных творческих способностей, физических и (или) психологических качеств, то сделать это можно в период с 20 июня по 10 августа.</p>
+                        <p>Количество заявлений на поступление не ограничено!</p>
+                        <p>Зачисление в колледж осуществляется на основании приказа директора колледжа. Документ размещается на информационном стенде приемной комиссии и на официальном сайте образовательной организации на следующий день после его издания.</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="5774_" role="tabpanel" aria-labelledby="postuplenie-na-byudzhet-tab">
+                    <div class="tab-pane__inner-block">
+                        <p><strong>Подача заявлений на образовательные программы среднего профессионального образования за счет бюджета города Москвы осуществляется в электронном виде через <a href="https://www.mos.ru/">Портал государственных и муниципальных услуг (функций) города Москвы.</a></strong></p>
+                    </div>
+                    <div class="tab-pane__inner-block">
+                        <p><strong>В электронном заявлении указывается конкретный колледж и одна или несколько образовательных программ, а также следующая информация:</strong></p>
+                        <ul>
+                            <li>ФИО</li>
+                            <li>Пол</li>
+                            <li>Дата рождения</li>
+                            <li>Данные паспорта - серия, номер, дата выдачи, кем выдан</li>
+                            <li>Адрес регистрации по месту жительства в городе Москве</li>
+                        </ul>
+                        <p><strong>Данные документа об образовании и (или) квалификации (серия, номер):</strong></p>
+                        <ul>
+                            <li>Аттестат об основном общем образовании</li>
+                            <li>Аттестат о среднем общем образовании</li>
+                            <li>Диплом о начальном профессиональном образовании</li>
+                            <li>Диплом о среднем профессиональном образовании</li>
+                        </ul>
+                        <p><strong>К электронной форме заявления необходимо прикрепить скан-копии следующих документов:</strong></p>
+                        <ul>
+                            <li>Об образовании с приложениями</li>
+                            <li>Первая страница паспорта абитуриента и страница с регистрацией по месту жительства (или свидетельство о регистрации по месту пребывания в г. Москве на период обучения, если адрес места жительства и адрес места пребывания не совпадают)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane__inner-block">
+                        <p>Регистрация электронного заявления на Портале производится автоматически при условии полного и корректного заполнения всех полей формы. Документу присваивается индивидуальный номер. В течение одного рабочего дня с даты подачи заявки, заявитель получает автоматическое уведомление о регистрации заявления на Портале.</p>
+                        <p>Чтобы подать заявление нужно перейти по <a href="https://www.mos.ru/pgu/ru/services/procedure/0/0/7700000010000186812/" target="_blank">ссылке</a></p>
+                        <p>Сформировать и отправить электронное заявление на поступление через Портал государственных и муниципальных услуг (функций) города Москвы, а также пройти регистрацию на Портале, можно непосредственно в Приемной комиссии выбранного колледжа.</p>
+                        <p>Зачисление в колледж на бюджетную форму обучения осуществляется на основе результатов освоения поступающими программы основного общего или среднего общего образования (конкурс аттестатов), результатов вступительных испытаний (при наличии), а также индивидуальных достижений абитуриента, предоставленных в приемную комиссию.</p>
+                        <p>После принятия решения Приемной комиссией о зачислении абитуриента, в течение одного рабочего дня, он получает уведомление через Портал <a href="https://mos.ru">mos.ru</a> о необходимости представить в колледж в течение 5 дней комплект документов.</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="5775_" role="tabpanel" aria-labelledby="platnaya-forma-obucheniya-tab">
+                    <div class="tab-pane__inner-block">
+                        <p>При поступлении на платную форму обучения, необходимо лично приехать в приемную комиссию колледжа для подачи комплекта документов и заключения договора на оказание платных образовательных услуг.</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade " id="5776_" role="tabpanel" aria-labelledby="dokumenty-dlya-zachisleniya-tab">
+                    <div class="tab-pane__inner-block">
+                        <ul>
+                            <li>Заявление о приеме на обучение по программам среднего профессионального образования в образовательные организации города Москвы, реализующие образовательные программы среднего профессионального образования</li>
+                            <li>Документ, удостоверяющий личность, гражданство поступающего (паспорт)</li>
+                            <li>Документ об образовании и (или) документ об образовании и о квалификации (оригинал)</li>
+                            <li>Четыре фотографии (оригинал, 1 шт.), размер фотографии 3х4 см</li>
+                            <li>Медицинская справка (оригинал, 1 шт.) для специальностей, утвержденных перечнем Постановления Правительства Российской Федерации от 14 августа 2013 г. № 697 «Об утверждении перечня специальностей и направлений подготовки, при приеме на обучение по которым поступающие проходят обязательные предварительные медицинские осмотры (обследования) в порядке, установленном при заключении трудового договора или служебного контракта по соответствующей должности или специальности». Подробную информацию можно узнать на сайте выбранного колледжа;</li>
+                            <li>Документ, подтверждающий результаты индивидуальных достижений (при наличии, оригинал или копию)</li>
+                            <li>Дополнительные документы, определяемые Правилами приема колледжа</li>
+                            <li>Для тех кто поступает на “Платную форму обучения” — заключенный договор на оказание платных образовательных услуг</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane__inner-block">
+
+                        <p><strong>Иностранные граждане, лица без гражданства, в том числе соотечественники, проживающие за рубежом, при подаче заявления дополнительно предоставляют:</strong></p>
+                        <ul>
+                            <li>Оригинал документа (документов) иностранного государства об образовании и (или) документа об образовании и о квалификации, если удостоверяемое указанным документом образование признается в Российской Федерации на уровне соответствующего образования</li>
+                            <li>Заверенный в установленном порядке перевод на русский язык документа иностранного государства об образовании и приложения к нему (если последнее предусмотрено законодательством государства, в котором выдан такой документ)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="5777_" role="tabpanel" aria-labelledby="kontakty-priemnyh-komissiy-kolledzhey-tab">
+                    <div id="college_select">
+                        <div class="row">
+                            <div class="col-12">
+                                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=67c7188d-4675-4100-bc0c-3d60e75c3d2a" type="text/javascript"></script>
+                                <p>Выбор колледжа</p>
+                                <div class="select-block">
+                                    <div class="dropdown bootstrap-select">
+<!--                                        <select name="" id="inst_admission" data-live-search="true" data-show-subtext="true" class="" tabindex="-98">-->
+                                        <select name="" class="selectpicker"  id="inst_admission" data-live-search="true" data-show-subtext="true" class="" tabindex="-98">
+                                            <option value="">Выберите колледж</option>
+                                            <option value="14">ГАОУ ВО МГПУ</option>
+                                            <option value="9">ГАПОУ КП № 11</option>
+                                            <option value="40">ГАПОУ МОК им. В. Талалихина</option>
+                                            <option value="24">ГАПОУ ПК № 8 им. И.Ф. Павлова</option>
+                                            <option value="47">ГАПОУ ТК № 24</option>
+                                            <option value="48">ГБПОУ "1-й МОК"</option>
+                                            <option value="5">ГБПОУ "26 КАДР"</option>
+                                            <option value="51">ГБПОУ "Колледж полиции"</option>
+                                            <option value="2">ГБПОУ КАИТ № 20</option>
+                                            <option value="4">ГБПОУ КАС № 7</option>
+                                            <option value="55">ГБПОУ КБТ</option>
+                                            <option value="6">ГБПОУ КДПИ им. Карла Фаберже</option>
+                                            <option value="8">ГБПОУ КИГМ № 23</option>
+                                            <option value="58">ГБПОУ Киноколледж № 40 "Московская международная киношкола"</option>
+                                            <option value="49">ГБПОУ КМБ № 4</option>
+                                            <option value="7">ГБПОУ КМТ</option>
+                                            <option value="19">ГБПОУ Колледж "Царицыно"</option>
+                                            <option value="167">ГБПОУ КПСР</option>
+                                            <option value="10">ГБПОУ КС № 54</option>
+                                            <option value="11">ГБПОУ КСТ</option>
+                                            <option value="340">ГБПОУ КСУ № 10</option>
+                                            <option value="1143">ГБПОУ КСУ № 3</option>
+                                            <option value="41">ГБПОУ КСУ № 32</option>
+                                            <option value="13">ГБПОУ МАДК им. А.А. Николаева</option>
+                                            <option value="15">ГБПОУ МГКЭИТ</option>
+                                            <option value="16">ГБПОУ МГОК</option>
+                                            <option value="34">ГБПОУ МИК</option>
+                                            <option value="17">ГБПОУ МИПК им. И. Федорова</option>
+                                            <option value="18">ГБПОУ МКАГ</option>
+                                            <option value="20">ГБПОУ МОК ЗАПАД</option>
+                                            <option value="46">ГБПОУ Московский техникум креативных индустрий им. Л.Б. Красина</option>
+                                            <option value="57">ГБПОУ МПК</option>
+                                            <option value="36">ГБПОУ МТК</option>
+                                            <option value="21">ГБПОУ ОК "Юго-Запад"</option>
+                                            <option value="35">ГБПОУ ОКГ "Столица"</option>
+                                            <option value="39">ГБПОУ Пищевой колледж № 33</option>
+                                            <option value="23">ГБПОУ ПК № 18</option>
+                                            <option value="25">ГБПОУ ПК № 50 имени дважды Героя Социалистического Труда Н.А. Злобина</option>
+                                            <option value="26">ГБПОУ ПК им. Н.Н. Годовикова</option>
+                                            <option value="27">ГБПОУ ПК им. П.А. Овчинникова</option>
+                                            <option value="28">ГБПОУ ПТ № 47</option>
+                                            <option value="33">ГБПОУ ТК № 21</option>
+                                            <option value="50">ГБПОУ ТК № 34</option>
+                                            <option value="31">ГБПОУ ТПСК им. В. М. Максимчука</option>
+                                            <option value="53">ГБПОУ ФК № 35</option>
+                                            <option value="32">ГБПОУ ЭТК № 22</option>
+                                            <option value="52">ГБПОУ Юридический колледж</option>
+                                        </select>
+<!--                                        <button type="button" class="btn dropdown-toggle btn-light bs-placeholder" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="inst_admission" title="Выберите колледж">-->
+<!--                                            <div class="filter-option">-->
+<!--                                                <div class="filter-option-inner">-->
+<!--                                                    <div class="filter-option-inner-inner">Выберите колледж</div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </button>-->
+                                        <div class="dropdown-menu">
+                                            <div class="bs-searchbox">
+                                                <input type="search" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list">
+                                            </div>
+                                            <div class="inner show" role="listbox" id="bs-select-1" tabindex="-1">
+                                                <ul class="dropdown-menu inner show" role="presentation">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="colledge_list">
+                        <div class="row">
+                            <div class="col-12 col-md-4">
+                                <div class="place-item active">
+                                    г. Москва, Погонный проезд, д.5
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="place-item">
+                                    г. Москва, Напольный проезд, д.9
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                                <div class="place-item">
+                                    г. Москва, Проспект Буденного, д.35
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane__inner-block">
+                            <div id="map" class="map_block">
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8760a421a5299a417f9b40a7926bb5d95d507be66925fbacfdb9aca5c8293a2e&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                            </div>
+                            <p><strong>Приемная комиссия ГАОУ ВО МГПУ</strong></p>
+                            <ul>
+                                <li>г. Москва, Погонный проезд, д.5</li>
+                                <li>Понедельник-пятница 10:00 – 16.30</li>
+                                <li>spo-23@edu.mos.ru <br>
+                                    +7 (499) 169-94-54 <br>
+                                    +7 (495) 300-76-50 <br>
+                                    +7 (495) 366-46-16 <br>
+                                    +7(985) 978-13-60
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12">
+                    <img class="video-background" src="assets/img/background-circle.png" alt="">
+                    <img class="about-background about-background-1" src="assets/img/arrows-right.png" alt="">
+                    <img class="about-background about-background-2" src="assets/img/arrows-right.png" alt="">
+                    <img class="about-background about-background-3" src="assets/img/arrows-right.png" alt="">
+                    <div class="offset-1 col-10 section-title">
+                        ПОЗНАКОМЬСЯ С КОЛЛЕДЖАМИ СТОЛИЦЫ
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2 col-md-8 offset-md-2 col-sm-12 offset-sm-0">
+                            <div class="section-subtitle">
+                                <p>Узнай, как получить востребованную и перспективную профессию в экономике города.</p>
+                                <p>В колледже ты будешь учиться на современном оборудовании у высококлассных мастеров своего дела.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-sm-12 offset-sm-0">
+                            <div class="video-block">
+                                <div class="btn-play"></div>
+                                <video id="movie" width="100%" height="100%" poster="assets/img/video-preview.png" controls>
+                                    <source src="assets/video/movie.MOV" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="footer-block__logo">
+                        <a href="https://www.mos.ru/donm/"><img alt="" src="assets/img/mosobr_logo_footer.svg"></a>
+                        <a href="https://mcrpo.ru/"><img alt="" src="assets/img/mcrpo_logo_footer.svg"></a>
+                    </div>
+                    <div class="footer-block__social mt-30">
+                        <a href="#"><img alt="https://t.me/wsrmoscow" src="assets/img/telegram.svg"></a>
+                        <a href="https://vk.com/mcrpo"><img alt="" src="assets/img/vk.svg"></a>
+                    </div>
+                </div>
+                <div class="col-5 offset-1">
+                    <div class="footer-block__search">
+                        <div class="footer-block__search-group">
+                            <div class="row">
+                                <div class="col-8">
+                                    <input type="text" name="search" value="" placeholder="ВВЕДИТЕ СЛОВО ДЛЯ ПОИСКА">
+                                </div>
+                                <div class="col-4">
+                                    <button class="button" type="submit">ИСКАТЬ</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-block">
+                        2023, ГАОУ ДПО МЦРПО
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<script src="assets/js/jquery-3.6.4.min.js"></script>
+<script src="assets/js/jquery.validate.js"></script>
+<script src="assets/js/messages_ru.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap-select.min.js"></script>
+<script src="assets/js/i18n/defaults-ru_RU.js"></script>
+<script src="assets/owl-carousel/owl.carousel.js"></script>
+<script src="assets/js/scripts.js?4"></script>
+<script src="assets/js/jquery.inputmask.min.js"></script>
+<script src="assets/js/inputmask.binding.js"></script>
+
+
+
+</body>
+
+</html>
