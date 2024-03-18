@@ -155,12 +155,18 @@ body {
     .girl-background {
 	    left: -13%;
 	    top: -10%;
-        position: relative;
+        position: absolute !important;
         z-index: 5;
         width: 900px;
         height: 900px;
         background-image: url('../img/image-main-header.png');
     }
+
+	@media (min-width: 768px) {
+		.girl-background{
+			position: relative;
+		}
+	}
 
     .feedback-group {
         position: absolute;
