@@ -851,11 +851,31 @@ body {
 			justify-content: center;
 			align-items: center;
 		}
+		&__gear-orange{
+			background-image: url(../img/gear-orange.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 124px;
+			height: 124px;
+			position: relative;
+			margin-top: 30px;
+			margin-bottom: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
 		&__icon{
 			width: 110px;
 			height: 110px;
 			border-radius: 60px;
 			background-color: @menu-color-active;
+		}
+		&__icon-orange{
+			width: 110px;
+			height: 110px;
+			border-radius: 60px;
+			background-color: @btn-color;
 		}
 		&__text{
 			font-family: @font-extrabold;
@@ -3155,3 +3175,121 @@ h3{
     }
 }
 
+.dod{
+	.video-block{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		#movie{
+			border-radius: 30px;
+		}
+		.btn-play{
+			width: 78px;
+			height: 77px;
+			//left: 0;
+			//right: 0;
+			//margin: 0 auto;
+			border-radius: 50px;
+			background-image: url("../img/btn-play.svg");
+			background-repeat: no-repeat;
+			background-position: center center;
+			position: absolute;
+			z-index: 10;
+			//top: -35px;
+			&:hover{
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.block-btn{
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	.btn-dod{
+		margin-bottom: 20px;
+		display: inline-block;
+		position: relative;
+		border: 1px solid #FFF;
+		width: 100%;
+		color: @text-color;
+		font-family: @font-regular;
+		font-size: 32px;
+		font-weight: 600;
+		line-height: 38px;
+		letter-spacing: 0;
+		background-color: @background-color2;
+		padding: 18px;
+		border-radius: 20px;
+		text-align: center;
+		text-decoration: none;
+	}
+}
+
+.dod-header{
+	&__title{
+		color: rgb(255, 255, 255);
+		font-family: @font-extrabold;
+		font-size: 44px;
+		font-weight: 800;
+		line-height: 130%;
+		letter-spacing: 0;
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	&__regular{
+		font-family: @font-regular !important;
+	}
+}
+
+.dod-section-2{
+	background-color: @background-color2;
+	background-image: url('../img/background-gear.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 52px;
+	padding-bottom: 90px;
+}
+.dod-section{
+	&__text{
+		margin-top: 30px;
+		font-family: @font-extrabold;
+		font-size: 32px;
+		line-height: 38px;
+		letter-spacing: 0;
+		text-align: left;
+		text-transform: uppercase;
+		color: @menu-color-active;
+		span{
+			margin-right: 20px;
+		}
+	}
+	&__subtext{
+		margin-top: 15px;
+		color: @text-color;
+		font-family: @font-semibold;
+		font-size: 24px;
+		line-height: 29px;
+		letter-spacing: 0;
+		text-align: left;
+	}
+}
+.page-block4{
+	margin-top: 60px !important;
+	margin-bottom: 60px !important;
+}
+.map-container iframe{
+	border-radius: 30px;
+}
+
+.dod.about{
+	padding-top: 70px !important;
+	p, li {
+		color: @text-color;
+	}
+}
+.mt-100{
+	margin-top: 100px;
+}
