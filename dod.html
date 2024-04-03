@@ -21,10 +21,10 @@
             <div class="ellipse1"></div>
             <div class="ellipse2"></div>
             <div class="align-items-center">
-                <nav class="navbar navbar-expand-lg z-3 d-flex w-100">
+                <nav class="navbar navbar-expand-lg z-10 d-flex w-100">
                     <div class="col-xl-3 col-lg-3 d-flex align-items-center justify-content-start">
-                        <a href="https://www.mos.ru/donm/"><img src="assets/img/mosobr_logo.svg" alt=""></a>
-                        <a href="https://mcrpo.ru/"><img src="assets/img/mcrpo_logo.svg" alt=""></a>
+                        <a href="https://www.mos.ru/donm/"><img width="72px" src="assets/img/logo-mosobr.png" alt=""></a>
+                        <a href="https://mcrpo.ru/"><img width="160px" src="assets/img/logo-mcrpo.png" alt=""></a>
                     </div>
                     <button class="navbar-toggler collapsed position-relative" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar top-bar"></span>
@@ -33,14 +33,17 @@
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <div class="col-xl-8 col-lg-7 d-flex justify-content-evenly navbar-list-1">
-                            <a href="/index.html">ГЛАВНАЯ</a>
-                            <a href="/otrasli.html">ОТРАСЛИ</a>
-                            <a class="" href="/professii.html">ПРОФЕССИИ</a>
-                            <a href="/college.html" class="" >КОЛЛЕДЖИ</a>
+                        <div class="col-xl-8 col-lg-10 d-flex justify-content-evenly navbar-list-1 position-relative">
+                            <a href="/index.html" class="active">Главная</a>
+                            <a href="/otrasli.html">Отрасли</a>
+                            <a href="/professii.html">Профессии</a>
+                            <a href="/college.html">Колледжи</a>
+                            <a href="/college.html">Поступление</a>
+
+                            <a href="/rostex.html" class="rostex-menu">Проект дуального обучения ГК «Ростех»</a>
                         </div>
-                        <div class="col-xl-4 col-lg-5 d-flex justify-content-evenly navbar-list-2">
-<!--                            <a href="/page.html" class="button btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</a>-->
+                        <div class="col-xl-4 col-lg-2 d-flex justify-content-evenly navbar-list-2">
+                            <!--                            <a href="/page.html" class="button btn-open-door">ДНИ ОТКРЫТЫХ ДВЕРЕЙ</a>-->
                             <a href="/map.html" class="button btn-map">КАРТА</a>
                         </div>
                     </div>
@@ -49,155 +52,40 @@
         </div>
     </section>
 
-    <section class="otr">
+    <section class="dod otr">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2>Дни Открытых Дверей</h2>
-                </div>
-                <div class="col-12">
-                    <div class="row calendar-block">
-                        <div class="col-lg-3 col-md-3 col-xs-12">
-                            <div id="demo" style="width: 100%">
-                                <div id="ca"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-xs-12 calendar-profession-block">
-                            <p>Возможно посетить в этот день</p>
-                            <ul>
-                                <li>Адаптивная физическая культура</li>
-                                <li>Исполнитель художественно-оформительских работ</li>
-                                <li>Земельно-имущественные отношения</li>
-                                <li>Монтаж, техническое обслуживание и ремонт электронных приборов и устройств</li>
-                                <li>Изготовитель художественных изделий из дерева</li>
-                                <li>Гостиничное дело</li>
-                                <li>Земельно-имущественные отношения</li>
-                            </ul>
-                        </div>
+                    <div class="video-block">
+                        <div class="btn-play"></div>
+                        <video id="movie" width="100%" height="100%" poster="assets/img/video-preview.png" controls>
+                            <source src="assets/video/movie.MOV" type="video/mp4">
+                        </video>
                     </div>
+                </div>
+            </div>
+
+            <div class="row block-btn">
+                <div class="col-6">
+                    <a href="#" target="_blank" class="btn-dod">Записаться</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" target="_blank" class="btn-dod">Дни открытых дверей</a>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-12">
-                    <h3 style="padding-left: 0">Выбор специальности</h3>
-                </div>
-                <div class="col-12">
-                    <div class="select-block">
-                        <select name="" class="selectpicker">
-                            <option value="">Выберите специальность</option>
-                            <option value="1">Архитектура</option>
-                            <option value="2">Кровельщик</option>
-                            <option value="3">Мастер сухого строительства</option>
-                            <option value="4">Мастер общестроительных работ</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="banner-block">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-12 col-sm-12">
-<!--                                <div class="banner-block__header">АДАПТИВНАЯ ФИЗИЧЕСКАЯ КУЛЬТУРА</div>-->
-                                <div class="banner-block__header">СТРОИТЕЛЬСТВО И ЭКСПЛУАТАЦИЯ АВТОМОБИЛЬНЫХ ДОРОГ, АЭРОДРОМОВ И ГОРОДСКИХ ПУТЕЙ СООБЩЕНИЯ</div>
-                                <div class="banner-block__text">
-                                    <p>Поздравляем! Ты выбрал интересную профессию, направленную на помощь людям.</p>
-                                    <p>
-                                        В будущем ты будешь заниматься коррекцией физических отклонений в состоянии здоровья,
-                                        социальной адаптацией, тренировочным процессом, организацией и проведением соревнований
-                                        для лиц с ограниченными возможностями здоровья.
-                                    </p>
-                                    <p>
-                                        Сейчас мы расскажем тебе, чему ты научишься, кем и где сможешь работать, какие навыки тебе нужны для успешной карьеры по специальности.
-                                    </p>
-                                </div>
-
-                                <a href="" class="btn more-btn">Подробнее о профессии</a>
-                            </div>
-
-                            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center position-relative">
-                                <div class="banner-block__img" style="background-image: url('assets/img/profession-block-img.png')" ></div>
-
-<!--                                <a href="#" class="btn btn-more" target="_blank">Подробнее о профессии</a>-->
-                            </div>
-                        </div>
-                    </div>
+                    <div class="dod-header__title">ГБПОУ МОК ЗАПАД</div>
+                    <div class="dod-header__title dod-header__regular">23.03.2024 с 10:00 до 14:00</div>
                 </div>
             </div>
 
-
-            <div class="row">
-                <div class="col-12">
-                    <h3>Адрес колледжа</h3>
-                </div>
-                <div class="col-12">
-                    <div class="address-block">
-                        <a href="#" class="btn btn-address active">Москва, Рязанский просп., 8, стр. 1</a>
-                        <a href="#" class="btn btn-address ">Москва, ул. Рабочая улица, 12</a>
-                        <a href="#" class="btn btn-address ">Москва, ул. Басовская, 12</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div class="info-block">
-                    <div class="info-block__schedule">
-                        <div class="row">
-                            <div class="col-12 position-relative">
-                                <div id="owl-carousel-schedule" class="owl-carousel owl-theme">
-                                    <div class="datetime-block active">
-                                        <div class="date-block">12.03.2023</div>
-                                        <div class="time-block">12.00-18.00</div>
-                                    </div>
-                                    <div class="datetime-block">
-                                        <div class="date-block">19.06.2023</div>
-                                        <div class="time-block">12.00-18.00</div>
-                                    </div>
-                                    <div class="datetime-block">
-                                        <div class="date-block">23.06.2023</div>
-                                        <div class="time-block">12.00-18.00</div>
-                                    </div>
-                                    <div class="datetime-block">
-                                        <div class="date-block">25.06.2023</div>
-                                        <div class="time-block">12.00-18.00</div>
-                                    </div>
-                                    <div class="datetime-block">
-                                        <div class="date-block">26.06.2023</div>
-                                        <div class="time-block">12.00-18.00</div>
-                                    </div>
-                                    <div class="datetime-block">
-                                        <div class="date-block">01.07.2023</div>
-                                        <div class="time-block">12.00-18.00</div>
-                                    </div>
-                                </div>
-                                <div class="nav-schedule-slider">
-                                    <div class="prev"></div>
-                                    <div class="next"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="speciality-list">
-                        <div class="row">
-                            <div class="col-12">
-                                <ul>
-                                    <li>Монтаж, техническое обслуживание и ремонт электронных приборов и устройств</li>
-                                    <li>Изготовитель художественных изделий из дерева</li>
-                                    <li>Гостиничное дело</li>
-                                    <li>Исполнитель художественно-оформительских работ</li>
-                                    <li>Земельно-имущественные отношения</li>
-                                    <li>Монтаж, техническое обслуживание и ремонт электронных приборов и устройств</li>
-                                    <li>Изготовитель художественных изделий из дерева</li>
-                                    <li>Гостиничное дело</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <a href="page.html" class="btn more-btn">Подробнее</a>
-                </div>
-            </div>
         </div>
+    </section>
+
+    <section class="dod-section-2">
+
     </section>
 
     <section class="about">
